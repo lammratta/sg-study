@@ -1,0 +1,1083 @@
+{
+  "setId": "sample2022",
+  "source": {
+    "year": "サンプル問題",
+    "session": "（2022年12月公開）",
+    "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf"
+  },
+  "questions": [
+    {
+      "id": "sample2022-a-17",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 17,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問17",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        8,
+        8
+      ],
+      "stem": "攻撃者が用意したサーバ X の IP アドレスが，A 社 Web サーバの FQDN に対応するIPアドレスとして，B 社 DNS キャッシュサーバに記憶された。これによって，意図せずサーバ X に誘導されてしまう利用者はどれか。ここで，A 社，B 社の各従業員は自社の DNS キャッシュサーバを利用して名前解決を行う。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "A 社 Web サーバにアクセスしようとする A 社従業員"
+        },
+        {
+          "key": "イ",
+          "text": "A 社 Web サーバにアクセスしようとする B 社従業員"
+        },
+        {
+          "key": "ウ",
+          "text": "B 社 Web サーバにアクセスしようとする A 社従業員"
+        },
+        {
+          "key": "エ",
+          "text": "B 社 Web サーバにアクセスしようとする B 社従業員"
+        }
+      ],
+      "answer": [
+        "イ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-18",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 18,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問18",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        8,
+        9
+      ],
+      "stem": "攻撃者が，多数のオープンリゾルバに対して， “あるドメイン”の実在しないランダムなサブドメインを多数問い合わせる攻撃（ランダムサブドメイン攻撃）を仕掛け，多数のオープンリゾルバが応答した。このときに発生する事象はどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "“あるドメイン”を管理する権威 DNS サーバに対して負荷が掛かる。"
+        },
+        {
+          "key": "イ",
+          "text": "“あるドメイン”を管理する権威 DNS サーバに登録されている DNS 情報が改ざんされる。"
+        },
+        {
+          "key": "ウ",
+          "text": "オープンリゾルバが保持する DNS キャッシュに不正な値を注入される。"
+        },
+        {
+          "key": "エ",
+          "text": "オープンリゾルバが保持するゾーン情報を不正に入手される。"
+        }
+      ],
+      "answer": [
+        "ア"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-19",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 19,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問19",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        9,
+        9
+      ],
+      "stem": "SEO ポイズニングの説明はどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "Web 検索サイトの順位付けアルゴリズムを悪用して，検索結果の上位に，悪意のある Web サイトを意図的に表示させる。"
+        },
+        {
+          "key": "イ",
+          "text": "車などで移動しながら，無線 LAN のアクセスポイントを探し出して，ネットワークに侵入する。"
+        },
+        {
+          "key": "ウ",
+          "text": "ネットワークを流れるパケットから，侵入のパタ ーンに合致するものを検出して，管理者への通知や，検出した内容の記録を行う。"
+        },
+        {
+          "key": "エ",
+          "text": "マルウェア対策ソフトのセキュリティ上のぜい脆弱性を悪用して，システム権限で不正な処理を実行させる。"
+        }
+      ],
+      "answer": [
+        "ア"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-20",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 20,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問20",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        9,
+        9
+      ],
+      "stem": "データベースで管理されるデータの暗号化に用いることができ，かつ，暗号化と復号とで同じ鍵を使用する暗号方式はどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "AES"
+        },
+        {
+          "key": "イ",
+          "text": "PKI"
+        },
+        {
+          "key": "ウ",
+          "text": "RSA"
+        },
+        {
+          "key": "エ",
+          "text": "SHA-256"
+        }
+      ],
+      "answer": [
+        "ア"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-21",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 21,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問21",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        9,
+        10
+      ],
+      "stem": "OpenPGP や S/MIME において用いられるハイブリッド暗号方式の特徴はどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "暗号通信方式として IPsec と TLS を選択可能にすることによって利用者の利便性を高める。"
+        },
+        {
+          "key": "イ",
+          "text": "公開鍵暗号方式と共通鍵暗号方式を組み合わせることによって鍵管理コストと処理性能の両立を図る。"
+        },
+        {
+          "key": "ウ",
+          "text": "複数の異なる共通鍵暗号方式を組み合わせることによって処理性能を高める。"
+        },
+        {
+          "key": "エ",
+          "text": "複数の異なる公開鍵暗号方式を組み合わせることによって安全性を高める。"
+        }
+      ],
+      "answer": [
+        "イ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-22",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 22,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問22",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        10,
+        10
+      ],
+      "stem": "デジタル署名に用いる鍵の組みのうち，適切なものはどれか。\nデジタル署名の 作成に用いる鍵 デジタル署名の 検証に用いる鍵",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "共通鍵 秘密鍵"
+        },
+        {
+          "key": "イ",
+          "text": "公開鍵 秘密鍵"
+        },
+        {
+          "key": "ウ",
+          "text": "秘密鍵 共通鍵"
+        },
+        {
+          "key": "エ",
+          "text": "秘密鍵 公開鍵"
+        }
+      ],
+      "answer": [
+        "エ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-23",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 23,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問23",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        10,
+        10
+      ],
+      "stem": "メッセージが改ざんされていないかどうかを確認するために ，そのメッセージから，ブロック暗号を用いて生成することができるものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "PKI"
+        },
+        {
+          "key": "イ",
+          "text": "パリティビット"
+        },
+        {
+          "key": "ウ",
+          "text": "メッセージ認証符号"
+        },
+        {
+          "key": "エ",
+          "text": "ルート証明書"
+        }
+      ],
+      "answer": [
+        "ウ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-24",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 24,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問24",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        10,
+        11
+      ],
+      "stem": "リスクベース認証に該当するものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "インターネットバンキングでの取引において，取引の都度，乱数表の指定したマス目にある英数字を入力させて認証する。"
+        },
+        {
+          "key": "イ",
+          "text": "全てのアクセスに対し，トークンで生成されたワンタイムパスワードを入力させて認証する。"
+        },
+        {
+          "key": "ウ",
+          "text": "利用者の IP アドレスなどの環境を分析し，いつもと異なるネットワークからのアクセスに対して追加の認証を行う。"
+        },
+        {
+          "key": "エ",
+          "text": "利用者の記憶，持ち物，身体の特徴のうち，必ず二つ以上の方式を組み合わせて認証する。"
+        }
+      ],
+      "answer": [
+        "ウ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-25",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 25,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問25",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        11,
+        11
+      ],
+      "stem": "Web サイトで利用される CAPTCHA に該当するものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "人からのアクセスであることを確認できるよう，アクセスした者 に応答を求め，その応答を分析する仕組み"
+        },
+        {
+          "key": "イ",
+          "text": "不正な SQL 文をデータベースに送信しないよう，Web サーバに入力された文字列をプレースホルダに割り当てて SQL 文を組み立てる仕組み"
+        },
+        {
+          "key": "ウ",
+          "text": "利用者が本人であることを確認できるよう，Web サイトから一定時間ごとに異なるパスワードを要求する仕組み"
+        },
+        {
+          "key": "エ",
+          "text": "利用者が本人であることを確認できるよう，乱数を Web サイト側で生成して利用者に送り，利用者側でその乱数を鍵としてパスワードを暗号化し，Web サイトに送り返す仕組み"
+        }
+      ],
+      "answer": [
+        "ア"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-26",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 26,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問26",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        11,
+        11
+      ],
+      "stem": "HTTP over TLS（HTTPS）を用いて実現できるものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "Web サーバ上のファイルの改ざん検知"
+        },
+        {
+          "key": "イ",
+          "text": "Web ブラウザが動作する PC 上のマルウェア検査"
+        },
+        {
+          "key": "ウ",
+          "text": "Web ブラウザが動作する PC に対する侵入検知"
+        },
+        {
+          "key": "エ",
+          "text": "デジタル証明書によるサーバ認証"
+        }
+      ],
+      "answer": [
+        "エ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-27",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 27,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問27",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        11,
+        12
+      ],
+      "stem": "SPF（Sender Policy Framework）を利用する目的はどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "HTTP 通信の経路上での中間者攻撃を検知する。"
+        },
+        {
+          "key": "イ",
+          "text": "LAN への PC の不正接続を検知する。"
+        },
+        {
+          "key": "ウ",
+          "text": "内部ネットワークへの侵入を検知する。"
+        },
+        {
+          "key": "エ",
+          "text": "メール送信者のドメインのなりすましを検知する。"
+        }
+      ],
+      "answer": [
+        "エ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-28",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 28,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問28",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        12,
+        12
+      ],
+      "stem": "電子メールをドメイン A の送信者がドメイン B の宛先に送信するとき，送信者をドメイン A のメールサーバで認証するためのものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "APOP"
+        },
+        {
+          "key": "イ",
+          "text": "POP3S"
+        },
+        {
+          "key": "ウ",
+          "text": "S/MIME"
+        },
+        {
+          "key": "エ",
+          "text": "SMTP-AUTH"
+        }
+      ],
+      "answer": [
+        "エ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-29",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 29,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問29",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        12,
+        12
+      ],
+      "stem": "マルウェアの動的解析に該当するものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "検体のハッシュ値を計算し，オンラインデータベースに登録された既知のマルウェアのハッシュ値のリストと照合してマルウェアを特定する。"
+        },
+        {
+          "key": "イ",
+          "text": "検体をサンドボックス上で実行し，その動作や外部との通信を観測する。"
+        },
+        {
+          "key": "ウ",
+          "text": "検体をネットワーク上の通信データから抽出し，さらに，逆コンパイルして取得したコードから検体の機能を調べる。"
+        },
+        {
+          "key": "エ",
+          "text": "ハードディスク内のファイルの拡張子とファイルヘッダの内容を基に，拡張子が偽装された不正なプログラムファイルを検出する。"
+        }
+      ],
+      "answer": [
+        "イ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-30",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 30,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問30",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        12,
+        13
+      ],
+      "stem": "Web サーバの検査におけるポートスキャナの利用目的はどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "Web サーバで稼働しているサービスを列挙して，不要なサービスが稼働していないことを確認する。"
+        },
+        {
+          "key": "イ",
+          "text": "Web サーバの利用者 ID の管理状況を運用者に確認して，情報セキュリティポリシからの逸脱がないことを調べる。"
+        },
+        {
+          "key": "ウ",
+          "text": "Web サーバへのアクセスの履歴を解析して，不正利用を検出する。"
+        },
+        {
+          "key": "エ",
+          "text": "正規の利用者 ID でログインし，Web サーバのコンテンツを直接確認して，コンテンツの脆ぜい弱性を検出する。"
+        }
+      ],
+      "answer": [
+        "ア"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-31",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 31,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問31",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        13,
+        13
+      ],
+      "stem": "個人情報保護委員会“特定個人情報の適正な取扱いに関するガイドライン（事業者編）令和 4 年 3 月一部改正”及びその“Q&A”によれば，事業者によるファイル作成が禁止されている場合はどれか。なお， “Q&A”とは“ 「特定個人情報の適正な取扱いに関するガイドライン（事業者編） 」及び「 （別冊）金融業務における特定個人情報の適正な取扱いに関するガイドライン」に関する Q&A 令和 4 年 4 月 1 日更新”のことである。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "システム障害に備えた特定個人情報ファイルのバックアップファイルを作成する場合"
+        },
+        {
+          "key": "イ",
+          "text": "従業員の個人番号を利用して業務成績を管理するファイルを作成する場合"
+        },
+        {
+          "key": "ウ",
+          "text": "税務署に提出する資料間の整合性を確認するために個人番号を記載した明細表などチェック用ファイルを作成する場合"
+        },
+        {
+          "key": "エ",
+          "text": "保険契約者の死亡保険金支払に伴う支払調書ファイルを作成する場合"
+        }
+      ],
+      "answer": [
+        "イ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-32",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 32,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問32",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        13,
+        13
+      ],
+      "stem": "企業が業務で使用しているコンピュータに，記憶媒体を介してマルウェアを侵入させ，そのコンピュータのデータを消去した者を処罰の対象とする法律はどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "刑法"
+        },
+        {
+          "key": "イ",
+          "text": "製造物責任法"
+        },
+        {
+          "key": "ウ",
+          "text": "不正アクセス禁止法"
+        },
+        {
+          "key": "エ",
+          "text": "プロバイダ責任制限法"
+        }
+      ],
+      "answer": [
+        "ア"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    }
+  ],
+  "file": "sample2022-a2"
+}

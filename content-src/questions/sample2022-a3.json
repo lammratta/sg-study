@@ -1,0 +1,1083 @@
+{
+  "setId": "sample2022",
+  "source": {
+    "year": "サンプル問題",
+    "session": "（2022年12月公開）",
+    "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf"
+  },
+  "questions": [
+    {
+      "id": "sample2022-a-33",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 33,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問33",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        13,
+        14
+      ],
+      "stem": "企業が， “特定電子メールの送信の適正化等に関する法律”に定められた特定電子メールに該当する広告宣伝メールを送信する場合に関する記述のうち，適切なものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "SMS で送信する場合はオプトアウト方式を利用する。"
+        },
+        {
+          "key": "イ",
+          "text": "オプトイン方式，オプトアウト方式のいずれかを 企業が自ら選択する。"
+        },
+        {
+          "key": "ウ",
+          "text": "原則としてオプトアウト方式を利用する。"
+        },
+        {
+          "key": "エ",
+          "text": "原則としてオプトイン方式を利用する。"
+        }
+      ],
+      "answer": [
+        "エ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-34",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 34,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問34",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        14,
+        14
+      ],
+      "stem": "A 社は，B 社と著作物の権利に関する特段の取決めをせず，A 社の要求仕様に基づいて，販売管理システムのプログラム作成を B 社に委託した。この場合のプログラム著作権の原始的帰属に関する記述のうち，適切なものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "A 社と B 社が話し合って帰属先を決定する。"
+        },
+        {
+          "key": "イ",
+          "text": "A 社と B 社の共有帰属となる。"
+        },
+        {
+          "key": "ウ",
+          "text": "A 社に帰属する。"
+        },
+        {
+          "key": "エ",
+          "text": "B 社に帰属する。"
+        }
+      ],
+      "answer": [
+        "エ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-35",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 35,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問35",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        14,
+        14
+      ],
+      "stem": "システムテストの監査におけるチェックポイントのうち，最も適切なものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "テストケースが網羅的に想定されていること"
+        },
+        {
+          "key": "イ",
+          "text": "テスト計画は利用者側の責任者だけで承認されていること"
+        },
+        {
+          "key": "ウ",
+          "text": "テストは実際に業務が行われている環境で実施されていること"
+        },
+        {
+          "key": "エ",
+          "text": "テストは利用者側の担当者だけで行われていること"
+        }
+      ],
+      "answer": [
+        "ア"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-36",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 36,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問36",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        14,
+        14
+      ],
+      "stem": "アクセス制御を監査するシステム監査人の行為のうち，適切なものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "ソフトウェアに関するアクセス制御の管理台帳を作成し，保管した。"
+        },
+        {
+          "key": "イ",
+          "text": "データに関するアクセス制御の管理規程を閲覧した。"
+        },
+        {
+          "key": "ウ",
+          "text": "ネットワークに関するアクセス制御の管理方針を制定した。"
+        },
+        {
+          "key": "エ",
+          "text": "ハードウェアに関するアクセス制御の運用手続を実施した。"
+        }
+      ],
+      "answer": [
+        "イ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-37",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 37,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問37",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        14,
+        15
+      ],
+      "stem": "我が国の証券取引所に上場している企業において，内部統制の整備及び運用に最終的な責任を負っている者は誰か。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "株主"
+        },
+        {
+          "key": "イ",
+          "text": "監査役"
+        },
+        {
+          "key": "ウ",
+          "text": "業務担当者"
+        },
+        {
+          "key": "エ",
+          "text": "経営者"
+        }
+      ],
+      "answer": [
+        "エ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-38",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 38,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問38",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        15,
+        15
+      ],
+      "stem": "ヒューマンエラーに起因する障害を発生しにくくする方法に，エラープルーフ化がある。運用作業におけるエラープルーフ化の例として，最も適切なものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "画面上の複数のウィンドウを同時に使用する作業では，ウィンドウを間違えないようにウィンドウの背景色をそれぞれ異なる色にする。"
+        },
+        {
+          "key": "イ",
+          "text": "長時間に及ぶシステム監視作業では，疲労が蓄積しないように，2 時間おきに交代で休憩を取得する体制にする。"
+        },
+        {
+          "key": "ウ",
+          "text": "ミスが発生しやすい作業について，過去に発生したヒヤリハット情報を共有して同じミスを起こさないようにする。"
+        },
+        {
+          "key": "エ",
+          "text": "臨時の作業を行う際にも落ち着いて作業ができるように，臨時の作業の教育や訓練を定期的に行う。"
+        }
+      ],
+      "answer": [
+        "ア"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-39",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 39,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問39",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        15,
+        16
+      ],
+      "stem": "あるデータセンタでは，受発注管理システムの運用サービスを提供している。次の受発注管理システムの運用中の事象において，インシデントに該当するものはどれか。\n〔受発注管理システムの運用中の事象〕夜間バッチ処理において，注文トランザクションデータから注文書を出力するプログラムが異常終了した。異常終了を検知した運用担当者から連絡を受けた保守担当者は，緊急出社してサービスを回復し，後日，異常終了の原因となったプログラムの誤りを修正した。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "異常終了の検知"
+        },
+        {
+          "key": "イ",
+          "text": "プログラムの誤り"
+        },
+        {
+          "key": "ウ",
+          "text": "プログラムの異常終了"
+        },
+        {
+          "key": "エ",
+          "text": "保守担当者の緊急出社"
+        }
+      ],
+      "answer": [
+        "ウ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-40",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 40,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問40",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        16,
+        16
+      ],
+      "stem": "ソフトウェア開発プロジェクトにおいて WBS を作成する目的として，適切なものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "開発の期間と費用とがトレードオフの関係にある場合に，総費用の最適化を図る 。"
+        },
+        {
+          "key": "イ",
+          "text": "作業の順序関係を明確にして，重点管理すべきクリティカルパスを把握する 。"
+        },
+        {
+          "key": "ウ",
+          "text": "作業の日程を横棒（バー）で表して，作業の開始時点や終了時点，現時点の進捗を明確にする。"
+        },
+        {
+          "key": "エ",
+          "text": "作業を，階層的に詳細化して，管理可能な大きさに細分化する。"
+        }
+      ],
+      "answer": [
+        "エ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-41",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 41,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問41",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        16,
+        16
+      ],
+      "stem": "プロジェクトの日程計画を作成するのに適した技法はどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "PERT"
+        },
+        {
+          "key": "イ",
+          "text": "回帰分析"
+        },
+        {
+          "key": "ウ",
+          "text": "時系列分析"
+        },
+        {
+          "key": "エ",
+          "text": "線形計画法"
+        }
+      ],
+      "answer": [
+        "ア"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-42",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 42,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問42",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        16,
+        16
+      ],
+      "stem": "一方のコンピュータが正常に機能しているときには，他方のコンピュータが待機状態にあるシステムはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "デュアルシステム"
+        },
+        {
+          "key": "イ",
+          "text": "デュプレックスシステム"
+        },
+        {
+          "key": "ウ",
+          "text": "マルチプロセッシングシステム"
+        },
+        {
+          "key": "エ",
+          "text": "ロードシェアシステム"
+        }
+      ],
+      "answer": [
+        "イ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-43",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 43,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問43",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        16,
+        17
+      ],
+      "stem": "データベースの監査ログを取得する目的として，適切なものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "権限のない利用者のアクセスを拒否する。"
+        },
+        {
+          "key": "イ",
+          "text": "チェックポイントからのデータ復旧に使用する。"
+        },
+        {
+          "key": "ウ",
+          "text": "データの不正な書換えや削除を事前に検知する。"
+        },
+        {
+          "key": "エ",
+          "text": "問題のあるデータベース操作を事後に調査する。"
+        }
+      ],
+      "answer": [
+        "エ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-44",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 44,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問44",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        17,
+        17
+      ],
+      "stem": "社内ネットワークの PC から，中継装置を経由してインターネット上の Web サーバにアクセスする。中継装置は宛先の Web サーバのドメイン名から DNS を利用してグローバル IP アドレスを求め，そのグローバル IP アドレス宛てにアクセス要求の転送を行う機能を有する。この中継装置として，適切なものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "プロキシサーバ"
+        },
+        {
+          "key": "イ",
+          "text": "リピータ"
+        },
+        {
+          "key": "ウ",
+          "text": "ルータ"
+        },
+        {
+          "key": "エ",
+          "text": "レイヤ 2 スイッチ"
+        }
+      ],
+      "answer": [
+        "ア"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-45",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 45,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問45",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        17,
+        17
+      ],
+      "stem": "BPO の説明はどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "災害や事故で被害を受けても，重要事業を中断させない，又は可能な限り中断期間を短くする仕組みを構築すること"
+        },
+        {
+          "key": "イ",
+          "text": "社内業務のうちコアビジネスでない事業に関わる業務の一部又は全部を，外部の専門的な企業に委託すること"
+        },
+        {
+          "key": "ウ",
+          "text": "製品の基準生産計画，部品表及び在庫情報を基に，資材の所要量と必要な時期を求め，これを基準に資材の手配，納入の管理を支援する生産管理手法のこと"
+        },
+        {
+          "key": "エ",
+          "text": "プロジェクトを，戦略との適合性や費用対効果，リスクといった観点から評価を行い，情報化投資のバランスを管理し，最適化を図ること"
+        }
+      ],
+      "answer": [
+        "イ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-46",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 46,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問46",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        17,
+        18
+      ],
+      "stem": "製造業の企業が社会的責任を果たす活動の一環として，雇用創出や生産設備の環境対策に投資することによって，便益を享受するステークホルダは，株主，役員，従業員に加えて，どれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "近隣地域社会の住民"
+        },
+        {
+          "key": "イ",
+          "text": "原材料の輸入元企業"
+        },
+        {
+          "key": "ウ",
+          "text": "製品を購入している消費者"
+        },
+        {
+          "key": "エ",
+          "text": "取引をしている下請企業"
+        }
+      ],
+      "answer": [
+        "ア"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-47",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 47,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問47",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        18,
+        18
+      ],
+      "stem": "表から，期末在庫品を先入先出法で評価した場合の期末の在庫評価額は何千円か。\n摘要 数量（個） 単価（千円）期首在庫 10 10仕入4 月  1 11 6 月  2 12 7 月  3 13 9 月  4 14期末在庫 12",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "132"
+        },
+        {
+          "key": "イ",
+          "text": "138"
+        },
+        {
+          "key": "ウ",
+          "text": "150"
+        },
+        {
+          "key": "エ",
+          "text": "168"
+        }
+      ],
+      "answer": [
+        "ウ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "sample2022-a-48",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "sample2022",
+        "year": "サンプル問題",
+        "session": "（2022年12月公開）",
+        "part": "科目A・B",
+        "no": 48,
+        "citation": "情報セキュリティマネジメント試験 サンプル問題（2022年12月公開） 問48",
+        "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/gmcbt80000007cfs-att/sg_set_sample_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        18,
+        20
+      ],
+      "stem": "製造原価明細書から損益計算書を作成したとき，売上総利益は何千円か。\n製造原価明細書材料費  400労務費  300経  費  200当期総製造費用期首仕掛品棚卸高 150期末仕掛品棚卸高 250当期製品製造原価損益計算書売上高 1,000売上原価期首製品棚卸高 120当期製品製造原価期末製品棚卸高  70売上原価売上総利益単位　千円 単位　千円",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "150"
+        },
+        {
+          "key": "イ",
+          "text": "200"
+        },
+        {
+          "key": "ウ",
+          "text": "310"
+        },
+        {
+          "key": "エ",
+          "text": "450"
+        }
+      ],
+      "answer": [
+        "ア"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    }
+  ],
+  "file": "sample2022-a3"
+}

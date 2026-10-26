@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SG 学習（準備中）</title>
+<style>
+  :root { color-scheme: light dark; font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; }
+  body { margin: 0; padding: 24px 16px calc(24px + env(safe-area-inset-bottom)); max-width: 640px; margin-inline: auto; line-height: 1.7; }
+  h1 { font-size: 1.4rem; }
+  .card { border: 1px solid color-mix(in srgb, currentColor 20%, transparent); border-radius: 12px; padding: 16px; margin: 16px 0; }
+  .muted { opacity: .7; font-size: .9rem; }
+  table { border-collapse: collapse; width: 100%; } td, th { padding: 6px 8px; text-align: left; border-bottom: 1px solid color-mix(in srgb, currentColor 15%, transparent); }
+</style>
+</head>
+<body>
+<h1>SG 学習アプリ（準備中）</h1>
+<p>IPA 情報セキュリティマネジメント試験（SG）の個人用学習アプリです。現在は Phase 0（コンテンツ準備）の配信確認用ページです。</p>
+<div class="card">
+  <strong>コンテンツの状態</strong>
+  <table id="stats"><tbody><tr><td>読み込み中…</td></tr></tbody></table>
+  <p class="muted" id="built"></p>
+</div>
+<p class="muted">問題は IPA（独立行政法人情報処理推進機構）が公開している過去問題・公開問題・サンプル問題を出典明記のうえ使用しています。解説は自作です。</p>
+<script>
+fetch('content/index.json', { cache: 'no-cache' }).then(r => r.json()).then(d => {
+  const rows = [['コンテンツ版', 'v' + d.contentVersion], ['科目A 問題数', d.counts.questionsA], ['科目B 問題数', d.counts.questionsB], ['レビュー済み', d.counts.reviewed], ['教科書ページ', d.counts.topics]];
+  document.querySelector('#stats tbody').innerHTML = rows.map(([k, v]) => `<tr><th>${k}</th><td>${v}</td></tr>`).join('');
+  document.getElementById('built').textContent = '生成日時: ' + new Date(d.builtAt).toLocaleString('ja-JP');
+}).catch(() => { document.querySelector('#stats tbody').innerHTML = '<tr><td>content/index.json を読み込めませんでした</td></tr>'; });
+</script>
+</body>
+</html>

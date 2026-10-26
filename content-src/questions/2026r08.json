@@ -1,0 +1,1107 @@
+{
+  "setId": "2026r08",
+  "source": {
+    "year": "令和8年度",
+    "session": " 公開問題",
+    "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/rcu1hd0000012qj6-att/2026r08_sg_qs.pdf"
+  },
+  "questions": [
+    {
+      "id": "2026r08-a-01",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2026r08",
+        "year": "令和8年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 1,
+        "citation": "情報セキュリティマネジメント試験 令和8年度 公開問題 問1",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/rcu1hd0000012qj6-att/2026r08_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        2,
+        2
+      ],
+      "stem": "情報セキュリティのリスクマネジメントにおける残留リスクに関する記述のうち，適切なものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "経営者の意思決定に従って保有したリスクは，残留リスクに含まれない。"
+        },
+        {
+          "key": "イ",
+          "text": "特定されていないリスクは，残留リスクに含まれない。"
+        },
+        {
+          "key": "ウ",
+          "text": "リスク対応を行った後に残るリスクは，残留リスクである。"
+        },
+        {
+          "key": "エ",
+          "text": "リスクを生じさせる活動を継続しないという決定によって回避したリスクは，残留リスクである。"
+        }
+      ],
+      "answer": [
+        "ウ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "figureNote": "",
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2026r08-a-02",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2026r08",
+        "year": "令和8年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 2,
+        "citation": "情報セキュリティマネジメント試験 令和8年度 公開問題 問2",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/rcu1hd0000012qj6-att/2026r08_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        2,
+        2
+      ],
+      "stem": "組織的なインシデント対応体制の構築を支援する目的で JPCERT コーディネーションセンターが作成したものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "CSIRT マテリアル"
+        },
+        {
+          "key": "イ",
+          "text": "ISMS ユーザーズガイド"
+        },
+        {
+          "key": "ウ",
+          "text": "証拠保全ガイドライン"
+        },
+        {
+          "key": "エ",
+          "text": "組織における内部不正防止ガイドライン"
+        }
+      ],
+      "answer": [
+        "ア"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "figureNote": "",
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2026r08-a-03",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2026r08",
+        "year": "令和8年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 3,
+        "citation": "情報セキュリティマネジメント試験 令和8年度 公開問題 問3",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/rcu1hd0000012qj6-att/2026r08_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        2,
+        3
+      ],
+      "stem": "DMZ はどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "インターネットと内部ネットワークとの間に設置されるネットワーク"
+        },
+        {
+          "key": "イ",
+          "text": "外部から持ち込んだ PC がマルウェアなどに感染していないかどうかを社内ネットワークに接続する前にチェックするための，社内ネットワークとは隔離された専用のネットワーク"
+        },
+        {
+          "key": "ウ",
+          "text": "通信内容を監視し，あらかじめ設定された不正な通信パターンと一致した場合に通信を遮断するネットワーク"
+        },
+        {
+          "key": "エ",
+          "text": "不正通信を検知する際に利用するためにセキュリティベンダーから入手するシグネチャ情報"
+        }
+      ],
+      "answer": [
+        "ア"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "figureNote": "",
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2026r08-a-04",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2026r08",
+        "year": "令和8年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 4,
+        "citation": "情報セキュリティマネジメント試験 令和8年度 公開問題 問4",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/rcu1hd0000012qj6-att/2026r08_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        3,
+        3
+      ],
+      "stem": "チャレンジレスポンス認証方式に該当するものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "固定パスワードを，TLS による暗号通信を使い，クライアントからサーバに送信して，サーバで検証する。"
+        },
+        {
+          "key": "イ",
+          "text": "端末のシリアル番号を，クライアントで秘密鍵を使 って暗号化し，サーバに送信して，サーバで検証する。"
+        },
+        {
+          "key": "ウ",
+          "text": "トークンという機器が自動的に表示する，認証のたびに異なる数字列をパスワードとしてサーバに送信して，サーバで検証する。"
+        },
+        {
+          "key": "エ",
+          "text": "利用者が入力したパスワードと，サーバから受け取ったランダムなデータとをクライアントで演算し，その結果をサーバに送信して，サーバで検証する。"
+        }
+      ],
+      "answer": [
+        "エ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "figureNote": "",
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2026r08-a-05",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2026r08",
+        "year": "令和8年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 5,
+        "citation": "情報セキュリティマネジメント試験 令和8年度 公開問題 問5",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/rcu1hd0000012qj6-att/2026r08_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        3,
+        4
+      ],
+      "stem": "情報セキュリティでの脆ぜい弱性の検出に用いられるホワイトボックステストに該当するものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "検査対象のソフトウェア製品に対して，外部仕様を基に，問題を引き起こしそうなデータを大量に送り込み，その応答や挙動を監視することによって脆弱性を検出する。"
+        },
+        {
+          "key": "イ",
+          "text": "検査対象のネットワークに対して，ネットワークの構成図や機器名などの情報を得ずに，TCP/IP に係る既知の脆弱性を攻撃し，実際に侵入できるかどうかを確認することによって脆弱性を検出する。"
+        },
+        {
+          "key": "ウ",
+          "text": "検査対象のプログラムの内部構造及び内部仕様を基に，脆弱性の可能性がある箇所の処理で使われる入力値を変化させて実行することによって脆弱性を検出する。"
+        },
+        {
+          "key": "エ",
+          "text": "検査対象のプログラムの内部仕様を参照せずに，変数領域のあふれを見つけ出すツールを利用して，バッファオーバフローの脆弱性を検出する。"
+        }
+      ],
+      "answer": [
+        "ウ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "figureNote": "",
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2026r08-a-06",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2026r08",
+        "year": "令和8年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 6,
+        "citation": "情報セキュリティマネジメント試験 令和8年度 公開問題 問6",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/rcu1hd0000012qj6-att/2026r08_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        4,
+        4
+      ],
+      "stem": "セキュア OS のアクセス制御と管理者権限管理を説明した適切な組みはどれか。\nアクセス制御 管理者権限管理",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "リソースやプログラムのアクセス権は，OS の管理者が定めたセキュリティポリシーの下で一元的に制御され，リソースやプログラムの所有者が変更できない。OS の管理の分野ごとに異なる管理用アカウントを作成し，各アカウントに必要最小限の管理者特権を与える。"
+        },
+        {
+          "key": "イ",
+          "text": "リソースやプログラムのアクセス権は，OS の管理者が定めたセキュリティポリシーの下で一元的に制御され，リソースやプログラムの所有者が変更できない。OS の管理用に特権アカウントを作成し，特権アカウントに全ての権限を与える。"
+        },
+        {
+          "key": "ウ",
+          "text": "リソースやプログラムのアクセス権は，リソースやプログラムの所有者が保持し，制御する。OS の管理の分野ごとに異なる管理用アカウントを作成し，各アカウントに必要最小限の管理者特権を与える。"
+        },
+        {
+          "key": "エ",
+          "text": "リソースやプログラムのアクセス権は，リソースやプログラムの所有者が保持し，制御する。OS の管理用に特権アカウントを作成し，特権アカウントに全ての権限を与える。"
+        }
+      ],
+      "answer": [
+        "ア"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "figureNote": "",
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2026r08-a-07",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2026r08",
+        "year": "令和8年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 7,
+        "citation": "情報セキュリティマネジメント試験 令和8年度 公開問題 問7",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/rcu1hd0000012qj6-att/2026r08_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        4,
+        5
+      ],
+      "stem": "刑法の電子計算機損壊等業務妨害に該当する行為はどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "自社の Web サイトで海賊版のソフトウェアを故意に販売した。"
+        },
+        {
+          "key": "イ",
+          "text": "存在しない商品をインターネットのオークションサイトに故意に出品し，落札者に現金を振り込ませてだまし取った。"
+        },
+        {
+          "key": "ウ",
+          "text": "他人の著作物を著作者に許可なく，引用元の記載もせずに，営業目的の自社のWeb サイトに故意に掲載した。"
+        },
+        {
+          "key": "エ",
+          "text": "プロバイダのサーバに侵入し，サーバに保管されていた ある企業が業務に使用している Web ページの内容を故意に消去したり，書き換えたりした。"
+        }
+      ],
+      "answer": [
+        "エ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "figureNote": "",
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2026r08-a-08",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2026r08",
+        "year": "令和8年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 8,
+        "citation": "情報セキュリティマネジメント試験 令和8年度 公開問題 問8",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/rcu1hd0000012qj6-att/2026r08_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        5,
+        5
+      ],
+      "stem": "システム監査におけるフォローアップの説明として，適切なものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "監査の品質管理体制を，システム監査人が事前に確かめておくこと"
+        },
+        {
+          "key": "イ",
+          "text": "監査報告書の指摘事項に基づいて監査対象先が実施した改善措置を，システム監査人が確認すること"
+        },
+        {
+          "key": "ウ",
+          "text": "システム監査の対象範囲に関する事項を，システム監査人が文書化すること"
+        },
+        {
+          "key": "エ",
+          "text": "システム監査の目的に応じた適切な形式で作成し た監査報告書を，監査の依頼者及び関係者に提出すること"
+        }
+      ],
+      "answer": [
+        "イ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "figureNote": "",
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2026r08-a-09",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2026r08",
+        "year": "令和8年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 9,
+        "citation": "情報セキュリティマネジメント試験 令和8年度 公開問題 問9",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/rcu1hd0000012qj6-att/2026r08_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        5,
+        5
+      ],
+      "stem": "サービスマネジメントにおける，サービスレベル目標の説明はどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "意図した結果を達成するために，知識及び技能を適用する能力"
+        },
+        {
+          "key": "イ",
+          "text": "組織が約束する，具体的に測定可能なサービスの特性"
+        },
+        {
+          "key": "ウ",
+          "text": "トップマネジメントによって正式に表明された組織の意図及び方向付け"
+        },
+        {
+          "key": "エ",
+          "text": "明示されているか，通常，暗黙のうちに了解されているか，又は義務として要求されているニーズ又は期待"
+        }
+      ],
+      "answer": [
+        "イ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "figureNote": "",
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2026r08-a-10",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2026r08",
+        "year": "令和8年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 10,
+        "citation": "情報セキュリティマネジメント試験 令和8年度 公開問題 問10",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/rcu1hd0000012qj6-att/2026r08_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        5,
+        6
+      ],
+      "stem": "次の IP アドレスとサブネットマスクをもつ PC がある。この PC のネットワークアドレスとして，適切なものはどれか。\nIP アドレス：    10.170.70.19サブネットマスク： 255.255.255.240",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "10.170.70.0"
+        },
+        {
+          "key": "イ",
+          "text": "10.170.70.16"
+        },
+        {
+          "key": "ウ",
+          "text": "10.170.70.31"
+        },
+        {
+          "key": "エ",
+          "text": "10.170.70.255"
+        }
+      ],
+      "answer": [
+        "イ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "figureNote": "",
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2026r08-a-11",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2026r08",
+        "year": "令和8年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 11,
+        "citation": "情報セキュリティマネジメント試験 令和8年度 公開問題 問11",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/rcu1hd0000012qj6-att/2026r08_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        6,
+        6
+      ],
+      "stem": "e コマース運営会社がビッグデータを用いて新たなニーズを発掘し ，その後のビジネス戦略に生かそうとしている。ビッグデータの収集から活用までのフローを次の図のようにしたとき，データの分析で行うことはどれか。 ここで，選択肢ア～エは，フロー図の a～d のいずれかに対応している。\naビッグデータの収集dビジネス戦略への活用b必要なデータの整備cデータの分析",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "機械学習を用いて自然言語処理やクラスタリングを行い ，新しい傾向を導き出す。"
+        },
+        {
+          "key": "イ",
+          "text": "取扱い製品に関する SNS での評価などを自動プログラムで取得する。"
+        },
+        {
+          "key": "ウ",
+          "text": "ノイズリダクション処理やデータクレンジング処理を行う。"
+        },
+        {
+          "key": "エ",
+          "text": "発見した新しい傾向を見極めて，注力すべきビジネス戦略を立案する。"
+        }
+      ],
+      "answer": [
+        "ア"
+      ],
+      "figures": [],
+      "needsFigure": true,
+      "figureNote": "",
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2026r08-a-12",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2026r08",
+        "year": "令和8年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 12,
+        "citation": "情報セキュリティマネジメント試験 令和8年度 公開問題 問12",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/rcu1hd0000012qj6-att/2026r08_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        6,
+        8
+      ],
+      "stem": "良品である確率が 0.9，不良品である確率が 0.1 の外注部品について，受入検査を行いたい。受入検査には四つの案があり，それぞれの良品と不良品 1 個に掛かる諸費用は表のとおりである。期待費用が最も低い案はどれか。\n単位 円案 良品に掛かる費用 不良品に掛かる費用A 0 1,500 B 40 1,000 C 80 500 D 120 200",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "A"
+        },
+        {
+          "key": "イ",
+          "text": "B"
+        },
+        {
+          "key": "ウ",
+          "text": "C"
+        },
+        {
+          "key": "エ",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "ウ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "figureNote": "",
+      "hasTable": true,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2026r08-b-13",
+      "exam": "SG",
+      "kind": "B",
+      "source": {
+        "setId": "2026r08",
+        "year": "令和8年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 13,
+        "citation": "情報セキュリティマネジメント試験 令和8年度 公開問題 問13",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/rcu1hd0000012qj6-att/2026r08_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        8,
+        12
+      ],
+      "stem": "設問 次の依頼のうち，表 1 中の  ，  に入れるものの組合せはどれか。a に関する解答群のうち，最も適切なものを選べ。\n(一) C システムの設定を変更し，ゲスト入館証の QR コードの誤り訂正レベルの設定を高くする。\n(二) C システムの設定を変更し，ゲスト入館証は 1 回限り入館可能にする。\n(三) エレベーターで行先階に移動するためには， 平日の昼間も IC カードリーダーに B カードをかざすことを必要とする。そのため，各入居企業には，当該企業の従業員が 1 階のエレベーター前から当該企業まで来訪者をアテンドするよう要請する。\n(四) 警備員を 1 階のフラッパーゲート脇に配置し，不正に入館しようとしている者がいないかどうかを監視する。\na2 a1 a2 a1\na に関する解答群a1 a2",
+      "stemHtml": null,
+      "case": {
+        "text": "A 社は，従業員 300 名の専門商社であり，機密性の高い情報も取り扱っている。最近，A 社は，駅前の B ビルの 6 階に移転した。6 階には A 社だけが入居している。B ビルの 2 階から最上階の 17 階には多数の企業が入居しており，通常時はエレベーターを使用して各階に移動することができる。B ビルのビル管理業務は B 社が行っている。B 社はビルの入退館と入居企業の執務エリアの入退室を管理するシステム\n（以下，C システムという）を導入している。各入居企業は，C システムが発行するIC カード（以下，B カードという）を従業員に貸与している。各入居企業の執務エリアの出入口のドアは，当該企業が従業員に貸与した B カードをドア横の IC カードリーダーにかざすことによって解錠できる。B ビルのエントランスホールは 1 階にあり，エレベーターホールとの境界には，フラッパーゲートが設置されている。フラッパーゲートを通過する には，フラッパーゲートのリーダーに B カード又は入館用に一時的に発行された QR コードをかざす必要がある。フラッパーゲートを通過すれば，平日の昼間はエレベーターの行先階ボタンを押すことで各階に自由に移動ができる。夜間と休日は，行先階の入居企業 が従業員に貸与した B カードをエレベーター内の IC カードリーダーにかざす必要がある。フラッパーゲートのすぐ外には階段室に入るための階段口があり，階段口にある非常ドアは通常時，エントランスホールには出られるが，階段室には入れない仕組みになっている。ほかの階の階段口にある非常ドアは通常時，各フロアには出られないが，階段室には入れる仕組みになっている。ただし，どの階の非常ドアも清掃時などに一時的に出入り可能になることがある。また，非常時は自動的に出入り可能になる。フラッパーゲートの脇にはごみ箱が設置されている。\n〔来訪者管理〕B ビルへの来訪者は，C システムで管理している。入居企業が C システムに，来訪者氏名，所属，来訪日，来訪者メールアドレスを登録すると，来訪日にだけ有効なゲスト入館用の QR コード付き入館証（以下，ゲスト入館証という）の画像ファイルが添付された電子メールが来訪者メールアドレスに送付される。 来訪者は，来訪日当日に有効なゲスト入館証の QR コードを自身のスマートフォンの画面に表示するか又は印刷してフラッパーゲートのリーダーにかざすことによってフラッパーゲートを通過できる。当日に限り，同じ入館証で繰り返し入退館が可能なように C システムは設定\nされている。\n〔B ビルの物理的セキュリティにおける課題と B 社への依頼〕ある日，突然，取引先の D 社の E 氏が予約なしに，A 社の情報セキュリティリーダーの F 部長を訪ねて 6 階の受付エリアにやって来た。驚いた F 部長は，E 氏が来たことをきっかけに B ビルの物理的セキュリティについて調査し，複数の課題があることを発見した。そして，F 部長はその課題と B 社への依頼を表 1 にまとめた。\n表 1 B ビルの物理的セキュリティにおける課題と B 社への依頼（抜粋）項番 課題 B 社への依頼1 フラッパーゲート脇に設置されたごみ箱から印刷された使用済のゲスト入館証を拾えば，1 階のフラッパーゲートを通過し入館できてしまう。\n2 6 階以外への来訪者が，ゲスト入館証で1 階のフラッパーゲートを通過すれば，平日の昼間はエレベーターで 6 階に移動できてしまう。",
+        "html": null
+      },
+      "choices": [
+        {
+          "key": "ア",
+          "text": "(一) (二)"
+        },
+        {
+          "key": "イ",
+          "text": "(一) (三)"
+        },
+        {
+          "key": "ウ",
+          "text": "(二) (一)"
+        },
+        {
+          "key": "エ",
+          "text": "(二) (三)"
+        },
+        {
+          "key": "オ",
+          "text": "(二) (四)"
+        },
+        {
+          "key": "カ",
+          "text": "(三) (一)"
+        },
+        {
+          "key": "キ",
+          "text": "(三) (二)"
+        },
+        {
+          "key": "ク",
+          "text": "(三) (四)"
+        },
+        {
+          "key": "ケ",
+          "text": "(四) (一)"
+        },
+        {
+          "key": "コ",
+          "text": "(四) (二)"
+        }
+      ],
+      "answer": [
+        "エ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "figureNote": "",
+      "hasTable": true,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": [
+          "選択肢が10個"
+        ]
+      }
+    },
+    {
+      "id": "2026r08-b-14",
+      "exam": "SG",
+      "kind": "B",
+      "source": {
+        "setId": "2026r08",
+        "year": "令和8年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 14,
+        "citation": "情報セキュリティマネジメント試験 令和8年度 公開問題 問14",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/rcu1hd0000012qj6-att/2026r08_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        12,
+        14
+      ],
+      "stem": "設問 表 2 中の  ～  に入れる字句の適切な組合せを ，a に関する解答群の中から選べ。\na に関する解答群a1 a2 a3",
+      "stemHtml": null,
+      "case": {
+        "text": "A 社は従業員 200 名の電子機器メーカーである。東京に本社があり，新潟に工場がある。A 社では，ファイルサーバを図 1 のように運用している。\n・ファイルサーバは本社と工場のサーバルームに設置している。\n・ファイルサーバは，磁気テープを使用してファイルのバックアップを取得している。\n・土曜日の午前 2 時からフルバックアップを取得し，翌週の火曜日と木曜日の午前 2 時から増分バックアップを取得している。\n・情報システム部の担当者は毎週月曜日，火曜日，木曜日の朝 10 時頃，バックアップジョブの実行結果の確認と磁気テープの交換を行い，磁気テープは耐火金庫に保管している。\n・磁気テープには上書きモードでバックアップを取得し，1 か月分の磁気テープを世代管理している。\n・これまで，フルバックアップからのリストアには平均して 4 時間，1 回の増分バックアップからは平均して 0.25 時間掛かっている。\n・A 社は ICT 継続のための試験を実施しており，ファイルサーバも試験対象である。注記 事業影響度分析の結果に基づき，ファイルサーバは，72 時間の目標復旧時点（RPO）と120 時間の目標復旧時間(RTO)が要求事項として定められている。図 1 A 社のファイルサーバの運用\nA 社は ISMS 認証を取得しており，最高情報セキュリティ責任者（CISO）を中心に情報セキュリティに取り組み，定期的に，情報セキュリティリスクアセスメントを行っている。今般，ISMS 認証基準が JIS Q 27001:2023 に改正されたことを受け，情報セキュリティリーダーの B さんは，新基準への移行審査に向けて準備することになった。改正によって新たに追加された情報セキュリティ管理策について，B さんは情報システム部の担当者に取組状況を確認し，その評価結果を表 1 にまとめた。\n表 1 B さんの評価結果（抜粋）項番 情報セキュリティ管理策 評価結果1 （事業継続のための ICT の備え）事業継続の目的及び ICT 継続の要求事項に 基づいて，ICT の備えを計画 し，実施し，維持し，試験しなければならない。実施している\nB さんは，移行審査前の内部監査で，内部監査室から表 1 の項番 1 に関するファイルサーバの運用について何点か質問を受け，表 2 のとおり回答した。\n表 2 内部監査室への B さんの回答（抜粋）項番 B さんの回答1 例えば， 金曜日の正午に障害が発生した場合， 少なくとも   の時点の データは復元しなければならない。2 例えば，木曜日の正午に障害が発生し，ファイルサーバの全データが消失した とすると，バックアップからのリストアには  時間掛かると予想される。3 ICT 継続の計画書は，  が承認している。",
+        "html": null
+      },
+      "choices": [
+        {
+          "key": "ア",
+          "text": "月曜日の正午 4.25 CISO"
+        },
+        {
+          "key": "イ",
+          "text": "月曜日の正午 4.25 情報システム部の担当者"
+        },
+        {
+          "key": "ウ",
+          "text": "月曜日の正午 4.25 内部監査室長"
+        },
+        {
+          "key": "エ",
+          "text": "月曜日の正午 4.50 CISO"
+        },
+        {
+          "key": "オ",
+          "text": "月曜日の正午 4.50 情報システム部の担当者"
+        },
+        {
+          "key": "カ",
+          "text": "火曜日の正午 4.25 情報システム部の担当者"
+        },
+        {
+          "key": "キ",
+          "text": "火曜日の正午 4.25 内部監査室長"
+        },
+        {
+          "key": "ク",
+          "text": "火曜日の正午 4.50 CISO"
+        },
+        {
+          "key": "ケ",
+          "text": "火曜日の正午 4.50 情報システム部の担当者"
+        },
+        {
+          "key": "コ",
+          "text": "火曜日の正午 4.50 内部監査室長a3 a1 a2 a3 a1"
+        }
+      ],
+      "answer": [
+        "ク"
+      ],
+      "figures": [],
+      "needsFigure": true,
+      "figureNote": "",
+      "hasTable": true,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": [
+          "選択肢が10個"
+        ]
+      }
+    },
+    {
+      "id": "2026r08-b-15",
+      "exam": "SG",
+      "kind": "B",
+      "source": {
+        "setId": "2026r08",
+        "year": "令和8年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 15,
+        "citation": "情報セキュリティマネジメント試験 令和8年度 公開問題 問15",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/rcu1hd0000012qj6-att/2026r08_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        14,
+        20
+      ],
+      "stem": "設問 表 1 中の  ～  に入れる評価の適切な組合せを解答群の中から選べ。\na に関する解答群a1 a2 a3",
+      "stemHtml": null,
+      "case": {
+        "text": "A 社は従業員 300 名の商社である。総務部が定めた A 社の文書管理ルールを図 1 に示す。\n〔文書の機密区分〕極秘    ：経営に関する重要な文書であり，経営企画に関わる者だけに開示する。経営企画書など。関係者外秘 ：特定の関係者だけに開示する。議事メモ，顧客情報など。社外秘   ：社内だけに開示する。クレーム情報，社内報など。公開    ：社外に公開可能なもの。商品カタログなど。\n〔機密区分のラベリング〕\n・文書を作成した部署の責任者が，機密区分を判断する。\n・“極秘” ， “関係者外秘”及び“社外秘” の文書は，機密区分を その文書のヘッダー部に明記する。\n・“極秘”と“関係者外秘 ”に関しては 開示範囲を明示するため，“役員だけ 極秘”や“〇〇部だけ 関係者外秘”という形式で明記する。\n〔文書の保管〕\n・ “極秘”及び“関係者外秘”の紙の文書は，使わないときや利用中に 離席するときはキャビネットに保管する。キャビネットは常時施錠し，関係者だけが解錠できるようにする。\n〔文書の廃棄〕\n・“極秘” ， “関係者外秘”及び“社外秘” の紙の文書を廃棄する際は，シュレッダーで 細断する。図 1 文書管理ルール（抜粋）\n総務部の情報セキュリティリーダーである S さんは，各部に対し年次の自己点検を指示した。その結果を基に，図 1 のルールに沿って文書を取り扱っているかを確認するために，A 社の一部の従業員にヒアリングしたところ，図 2 に示す事例が得られた。\n(1) 営業部の B さんの大学の後輩である C さんは，A 社の入社試験を受ける予定なので，Bさんは C さんに社内報を見せた。\n(2) “営業部だけ 関係者外秘”の議事メモは，営業部員だけが解錠できるキャビネットに保管している。不要となったものは毎週水曜日に，シュレッダーで 細断して廃棄している。\n(3) 昨年営業部に異動した元人事部の D さんが，営業部の事業計画の参考にするため，人事部の E さんから“人事部だけ 関係者外秘”の来年度の採用計画を見せてもらった。\n(4) 経営企画部の G さんは，来期の経営企画書のうち一部の作成を指示されていたが，机の上の本立てに最終原稿を差し込んで会議に向かった。\n(5) 人事部の I さんは就職セミナーで，営業部から借りた商品カタログを参加者に見せながら会社紹介をした。図 2 S さんが A 社の従業員へのヒアリングによって得た事例\nS さんは図 2 の事例について，図 1 に沿っているかどうかを評価し，表 1 のとおりまとめた。\n表 1 ヒアリングで得た事例に対する評価図 2 の項番 評価\n(1) （省略）\n(2)\n(3)\n(4)\n(5) （省略）注記 評価は，図 1 に沿っていれば“〇” ，沿っていなければ“×”とする。\na3 a2 a1",
+        "html": null
+      },
+      "choices": [
+        {
+          "key": "ア",
+          "text": "〇 〇 〇"
+        },
+        {
+          "key": "イ",
+          "text": "〇 〇 ×"
+        },
+        {
+          "key": "ウ",
+          "text": "〇 × 〇"
+        },
+        {
+          "key": "エ",
+          "text": "〇 × ×"
+        },
+        {
+          "key": "オ",
+          "text": "× 〇 〇"
+        },
+        {
+          "key": "カ",
+          "text": "× 〇 ×"
+        },
+        {
+          "key": "キ",
+          "text": "× × 〇"
+        },
+        {
+          "key": "ク",
+          "text": "× × ×a3 a1試験問題に記載されている会社名又は製品名は，それぞれ各社の商標又は登録商標です。なお，試験問題では，TM 及び ® を明記していません。"
+        }
+      ],
+      "answer": [
+        "エ"
+      ],
+      "figures": [],
+      "needsFigure": true,
+      "figureNote": "",
+      "hasTable": true,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    }
+  ]
+}

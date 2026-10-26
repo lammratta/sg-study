@@ -1,0 +1,18 @@
+{
+  "name": "sg-study",
+  "version": "0.1.0",
+  "private": true,
+  "description": "IPA 情報セキュリティマネジメント試験（SG）学習アプリ（個人用 PWA）",
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes serve public -l 8080",
+    "build:content": "node scripts/build-content.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "marked": "^15.0.0"
+  }
+}

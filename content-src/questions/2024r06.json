@@ -1,0 +1,1040 @@
+{
+  "setId": "2024r06",
+  "source": {
+    "year": "令和6年度",
+    "session": " 公開問題",
+    "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/eid2eo0000007g1d-att/2024r06_sg_qs.pdf"
+  },
+  "questions": [
+    {
+      "id": "2024r06-a-01",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2024r06",
+        "year": "令和6年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 1,
+        "citation": "情報セキュリティマネジメント試験 令和6年度 公開問題 問1",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/eid2eo0000007g1d-att/2024r06_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        2,
+        2
+      ],
+      "stem": "JIS Q 31000:2019（リスクマネジメント－指針）におけるリスクアセスメントを構成するプロセスの組合せはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "リスク特定，リスク評価，リスク受容"
+        },
+        {
+          "key": "イ",
+          "text": "リスク特定，リスク分析，リスク評価"
+        },
+        {
+          "key": "ウ",
+          "text": "リスク分析，リスク対応，リスク受容"
+        },
+        {
+          "key": "エ",
+          "text": "リスク分析，リスク評価，リスク対応"
+        }
+      ],
+      "answer": [
+        "イ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2024r06-a-02",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2024r06",
+        "year": "令和6年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 2,
+        "citation": "情報セキュリティマネジメント試験 令和6年度 公開問題 問2",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/eid2eo0000007g1d-att/2024r06_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        2,
+        2
+      ],
+      "stem": "情報の取扱基準の中で，社外秘情報の持出しを禁じ，周知した上で， 従業員に情報を不正に持ち出された場合に，“社外秘情報 とは知らなかった”という言い訳を させないことが目的の一つになっている対策はどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "権限がない従業員が文書にアクセスできないようにするペーパレス化"
+        },
+        {
+          "key": "イ",
+          "text": "従業員との信頼関係の維持を目的にした職場環境の整備"
+        },
+        {
+          "key": "ウ",
+          "text": "従業員に対する電子メールの外部送信データ量の制限"
+        },
+        {
+          "key": "エ",
+          "text": "情報の管理レベルについてのラベル付け"
+        }
+      ],
+      "answer": [
+        "エ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2024r06-a-03",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2024r06",
+        "year": "令和6年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 3,
+        "citation": "情報セキュリティマネジメント試験 令和6年度 公開問題 問3",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/eid2eo0000007g1d-att/2024r06_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        2,
+        3
+      ],
+      "stem": "マルウェアの検出方法のうち，検査対象のプログラムを実行する必要があるものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "コンペア法"
+        },
+        {
+          "key": "イ",
+          "text": "チェックサム法"
+        },
+        {
+          "key": "ウ",
+          "text": "パターンマッチング法"
+        },
+        {
+          "key": "エ",
+          "text": "ビヘイビア法"
+        }
+      ],
+      "answer": [
+        "エ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2024r06-a-04",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2024r06",
+        "year": "令和6年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 4,
+        "citation": "情報セキュリティマネジメント試験 令和6年度 公開問題 問4",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/eid2eo0000007g1d-att/2024r06_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        3,
+        3
+      ],
+      "stem": "サイバーキルチェーンに関する説明として，適切なものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "委託先の情報セキュリティリスクが委託元にも影響するという考え方を基にしたリスク分析のこと"
+        },
+        {
+          "key": "イ",
+          "text": "攻撃者がクライアントとサーバとの間の通信を中継し，あたかもクライアントとサーバが直接通信しているかのように装うことによって情報を盗聴するサイバー攻撃手法のこと"
+        },
+        {
+          "key": "ウ",
+          "text": "攻撃者の視点から，攻撃の手口を偵察から目的の実行までの段階に分けたもの"
+        },
+        {
+          "key": "エ",
+          "text": "取引データを複数の取引ごとにまとめ，それらを時系列につなげたチェーンに保存することによって取引データの改ざんを検知可能にしたもの"
+        }
+      ],
+      "answer": [
+        "ウ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2024r06-a-05",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2024r06",
+        "year": "令和6年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 5,
+        "citation": "情報セキュリティマネジメント試験 令和6年度 公開問題 問5",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/eid2eo0000007g1d-att/2024r06_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        3,
+        4
+      ],
+      "stem": "リスクベース認証の説明として，適切なものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "機器の画面に表示された点を正しい順序に一筆書きでなぞった場合，認証が成功し，機器のロックが解除される。"
+        },
+        {
+          "key": "イ",
+          "text": "通常とは異なる IP アドレス，Web ブラウザなどから認証要求があった場合に，追加の認証を行う。"
+        },
+        {
+          "key": "ウ",
+          "text": "認証局が，Web サイトへのサーバ証明書発行において，サーバ証明書に記載される組織のドメイン利用権，法的及び物理的実在性を確認する。"
+        },
+        {
+          "key": "エ",
+          "text": "ゆがんだ文字を含む画像を表示し，その文字が正しく入力された場合に認証が成功する。"
+        }
+      ],
+      "answer": [
+        "イ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2024r06-a-06",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2024r06",
+        "year": "令和6年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 6,
+        "citation": "情報セキュリティマネジメント試験 令和6年度 公開問題 問6",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/eid2eo0000007g1d-att/2024r06_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        4,
+        4
+      ],
+      "stem": "A 社の Web サーバは，サーバ証明書を使って TLS 通信を行っている。PC から A 社のWeb サーバへの TLS を用いたアクセスにおいて，当該 PC がサーバ証明書を入手した後に，認証局の公開鍵を利用して行う動作はどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "暗号化通信に利用する共通鍵を，認証局の公開鍵を使って復号する。"
+        },
+        {
+          "key": "イ",
+          "text": "暗号化通信に利用する共通鍵を生成し，認証局の公開鍵を使って暗号化する。"
+        },
+        {
+          "key": "ウ",
+          "text": "サーバ証明書の正当性を，認証局の公開鍵を使って検証する。"
+        },
+        {
+          "key": "エ",
+          "text": "利用者が入力して送付する秘匿データを，認証局の公開鍵を使って暗号化する。"
+        }
+      ],
+      "answer": [
+        "ウ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2024r06-a-07",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2024r06",
+        "year": "令和6年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 7,
+        "citation": "情報セキュリティマネジメント試験 令和6年度 公開問題 問7",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/eid2eo0000007g1d-att/2024r06_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        4,
+        4
+      ],
+      "stem": "個人情報保護法が保護の対象としている個人情報に関する記述のうち，適切なものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "企業が管理している顧客に関する情報に限られる。"
+        },
+        {
+          "key": "イ",
+          "text": "個人が秘密にしているプライバシーに関する情報に限られる。"
+        },
+        {
+          "key": "ウ",
+          "text": "生存する個人に関する情報に限られる。"
+        },
+        {
+          "key": "エ",
+          "text": "日本国籍を有する個人に関する情報に限られる。"
+        }
+      ],
+      "answer": [
+        "ウ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2024r06-a-08",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2024r06",
+        "year": "令和6年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 8,
+        "citation": "情報セキュリティマネジメント試験 令和6年度 公開問題 問8",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/eid2eo0000007g1d-att/2024r06_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        4,
+        5
+      ],
+      "stem": "内部統制の基本的要素の一つである“統制活動”に該当するものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "経営目的を達成するための経営方針及び経営戦略"
+        },
+        {
+          "key": "イ",
+          "text": "個人情報保護に関する脅威と脆ぜい弱性の分析"
+        },
+        {
+          "key": "ウ",
+          "text": "受注から出荷に至る業務プロセスに組み込まれた処理結果の検証"
+        },
+        {
+          "key": "エ",
+          "text": "定期的に計画して実施する内部業務監査"
+        }
+      ],
+      "answer": [
+        "ウ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2024r06-a-09",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2024r06",
+        "year": "令和6年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 9,
+        "citation": "情報セキュリティマネジメント試験 令和6年度 公開問題 問9",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/eid2eo0000007g1d-att/2024r06_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        5,
+        5
+      ],
+      "stem": "システムの信頼性指標として RASIS がある。そのうちの A は可用性を表し，システムのサービス時間など，ある一定期間でのシステムの機能を維持する度合いを表している。この A を向上させるものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "MTBF と MTTR をともに 2 倍にする。"
+        },
+        {
+          "key": "イ",
+          "text": "MTBF は変えず，MTTR を 2 倍にする。"
+        },
+        {
+          "key": "ウ",
+          "text": "MTBF を 2 倍にして，MTTR は変えない。"
+        },
+        {
+          "key": "エ",
+          "text": "MTBF を半分にして，MTTR は 2 倍にする。"
+        }
+      ],
+      "answer": [
+        "ウ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2024r06-a-10",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2024r06",
+        "year": "令和6年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 10,
+        "citation": "情報セキュリティマネジメント試験 令和6年度 公開問題 問10",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/eid2eo0000007g1d-att/2024r06_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        5,
+        5
+      ],
+      "stem": "社内ネットワークからインターネットへのアクセスを中継し，Web コンテンツをキャッシュすることによってアクセスを高速にする仕組みで，セキュリティ確保にも利用されるものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "DMZ"
+        },
+        {
+          "key": "イ",
+          "text": "IP マスカレード（NAPT）"
+        },
+        {
+          "key": "ウ",
+          "text": "ファイアウォール"
+        },
+        {
+          "key": "エ",
+          "text": "プロキシサーバ"
+        }
+      ],
+      "answer": [
+        "エ"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2024r06-a-11",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2024r06",
+        "year": "令和6年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 11,
+        "citation": "情報セキュリティマネジメント試験 令和6年度 公開問題 問11",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/eid2eo0000007g1d-att/2024r06_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        5,
+        6
+      ],
+      "stem": "全社的な推進体制で RPA を導入するときの留意点として，適切なものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "各業務部門が連携して，RPA の対象業務に対して業務プロセス全体の可視化と業務プロセスの見直しを行った上で，RPA の導入を行う。"
+        },
+        {
+          "key": "イ",
+          "text": "業務フローが固定的で画面の変更が少ない業務よりも，業務フローの変更や画面の変更が多い業務から優先的に導入する。"
+        },
+        {
+          "key": "ウ",
+          "text": "情報システム部門や 他部門との連携は行わずに，個々の業務部門が主導して，RPA ツールの選定，ソフトウェアロボットの作成，活用及び運用を推進する。"
+        },
+        {
+          "key": "エ",
+          "text": "ルール化された処理や繰返し処理が多い業務よりも ，例外処理が多い業務や条件が複雑な業務に対して，優先的に RPA の導入を行う。"
+        }
+      ],
+      "answer": [
+        "ア"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2024r06-a-12",
+      "exam": "SG",
+      "kind": "A",
+      "source": {
+        "setId": "2024r06",
+        "year": "令和6年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 12,
+        "citation": "情報セキュリティマネジメント試験 令和6年度 公開問題 問12",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/eid2eo0000007g1d-att/2024r06_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        6,
+        8
+      ],
+      "stem": "特性要因図を説明したものはどれか。",
+      "stemHtml": null,
+      "case": null,
+      "choices": [
+        {
+          "key": "ア",
+          "text": "原因と結果の関連を魚の骨のような形態に整理して体系的にまとめ，結果に対してどのような原因が関連しているかを明確にする。"
+        },
+        {
+          "key": "イ",
+          "text": "時系列的に発生するデータのばらつきを折れ線グラフで表し，管理限界線を利用して客観的に管理する。"
+        },
+        {
+          "key": "ウ",
+          "text": "収集したデータを幾つかの区間に分類し，各区間に属するデータの個数を棒グラフとして描き，品質のばらつきを捉える。"
+        },
+        {
+          "key": "エ",
+          "text": "データを幾つかの項目に分類し，出現頻度の大きさの順に棒グラフとして並べ，累積和を折れ線グラフで描き，問題点を絞り込む。"
+        }
+      ],
+      "answer": [
+        "ア"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2024r06-b-13",
+      "exam": "SG",
+      "kind": "B",
+      "source": {
+        "setId": "2024r06",
+        "year": "令和6年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 13,
+        "citation": "情報セキュリティマネジメント試験 令和6年度 公開問題 問13",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/eid2eo0000007g1d-att/2024r06_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        8,
+        10
+      ],
+      "stem": "設問 A 社が実施することにした設定変更の組合せはどれか。解答群のうち，最も適切なものを選べ。",
+      "stemHtml": null,
+      "case": {
+        "text": "A 社は，従業員 100 名の食品製造・販売会社である。A 社では，営業部が取り扱う顧客情報を X 社の SaaS である X 顧客管理サービス（以下，X サービスという）を利用して管理している。また，A 社は，X サービスの不正アクセス対策として，X サービスへのログインは，A 社の社内ネットワークからだけ許可しており，A 社の社外からはできないように設定している。X サービスに備わっている不正ログインを防止するための機能と，A 社が X サービスに適用している現在の設定を表 1 に示す。\n表 1 不正ログインを防止するための機能と現在の設定（抜粋）不正ログインを防止するための機能 現在の設定機能 1 指定した IP アドレスからアクセスした場合 だけ，ログインできるよう制限する。有効 1)機能 2 利用者 ID とパスワードによって認証する。 有効機能 3 英字，数字，記号の 3 種類全てを含む 8 文字以上のパスワードを強制する。有効機能 4 ワンタイムパスワードによって認証する。 無効機能 5 ログイン画面に CAPTCHA を表示し，回答させる。 無効\n注 1) A 社が使用しているグローバルIP アドレスを指定している。\nA 社では，昨今の社会情勢を鑑みて，営業部員を対象にテレワーク制度の導入を検討することにした。社外からも X サービスを利用できるようにしたい。また，社外から不正アクセスされるリスクを低減するために，利用者認証を強化したい。そこで，機能 1～5 の設定について，必要な変更を二つ実施することにした。",
+        "html": null
+      },
+      "choices": [
+        {
+          "key": "ア",
+          "text": "機能 1 機能 4"
+        },
+        {
+          "key": "イ",
+          "text": "機能 1 機能 5"
+        },
+        {
+          "key": "ウ",
+          "text": "機能 2 機能 4"
+        },
+        {
+          "key": "エ",
+          "text": "機能 2 機能 5"
+        },
+        {
+          "key": "オ",
+          "text": "機能 3 機能 4"
+        },
+        {
+          "key": "カ",
+          "text": "機能 3 機能 5"
+        }
+      ],
+      "answer": [
+        "ア"
+      ],
+      "figures": [],
+      "needsFigure": false,
+      "hasTable": true,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2024r06-b-14",
+      "exam": "SG",
+      "kind": "B",
+      "source": {
+        "setId": "2024r06",
+        "year": "令和6年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 14,
+        "citation": "情報セキュリティマネジメント試験 令和6年度 公開問題 問14",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/eid2eo0000007g1d-att/2024r06_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        10,
+        12
+      ],
+      "stem": "設問 B 課長が選んだ再発防止策はどれか。解答群のうち，最も適切なものを選べ。",
+      "stemHtml": null,
+      "case": {
+        "text": "A 社は医療品の販売を行う従業員 100 名の企業である。営業部では，オンプレミスのデータベースに顧客情報を格納している。営業部では，図 1 に示すバックアップポリシーを順守している。\n1． データベースは毎週日曜日にフルバックアップを，それ以外の日は毎日の増分バックアップを毎日，別のテープメディアに取得する。\n2． バックアップは 1 週間分保存する。\n3． データベースの目標復旧時点（RPO）は24 時間とする。\n4． バックアップからの目標復旧時間（RTO）は6 時間とする。\n5． バックアップを保存しているテープメディア（以下，バックアップテープという） は鍵付きのキャビネットに保管する。\n6． バックアップはシステムを停止せずに取得する。図 1 営業部におけるバックアップポリシー\n先日，金曜日に営業部では，アプリケーションの不具合によってデータベースの内部構造の破損（以下，論理破損という）が生じたので，データベースを復旧する必要が生じた。しかし，火曜日のバックアップテープが物理的に破損していたので，データベースをバックアップポリシーどおりには復旧できなかった。そのため，営業部の情報セキュリティリーダーである B 課長は，論理破損が起き，かつ，バックアップテープが物理的に破損していたとしてもデータベースを復旧できるようにする再発防止策を検討し，効果の高いものを選んだ。",
+        "html": null
+      },
+      "choices": [
+        {
+          "key": "ア",
+          "text": "DBMS を IaaS 上に構築したサーバで稼働させ，データベースも IaaS 上に格納する。"
+        },
+        {
+          "key": "イ",
+          "text": "データベースのレプリケーションを行って，データベースのコピーを確保する。"
+        },
+        {
+          "key": "ウ",
+          "text": "データベースを格納しているディスクを RAID5 構成にする。"
+        },
+        {
+          "key": "エ",
+          "text": "テープメディアに加え，NAS にもバックアップを 1 週間分保存する。"
+        },
+        {
+          "key": "オ",
+          "text": "毎日 1 回システムを停止させ，フルバックアップを取得する。"
+        }
+      ],
+      "answer": [
+        "エ"
+      ],
+      "figures": [],
+      "needsFigure": true,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    },
+    {
+      "id": "2024r06-b-15",
+      "exam": "SG",
+      "kind": "B",
+      "source": {
+        "setId": "2024r06",
+        "year": "令和6年度",
+        "session": " 公開問題",
+        "part": "科目A・B",
+        "no": 15,
+        "citation": "情報セキュリティマネジメント試験 令和6年度 公開問題 問15",
+        "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/eid2eo0000007g1d-att/2024r06_sg_qs.pdf",
+        "modified": false,
+        "modifiedNote": ""
+      },
+      "pages": [
+        12,
+        16
+      ],
+      "stem": "設問 周知すべきことはどれか。解答群のうち，最も適切なものを選べ。",
+      "stemHtml": null,
+      "case": {
+        "text": "A 社は，飲食店へのコンサルティングを行う従業員 50 名の企業である。A 社の全ての PC では，マルウェア対策ソフト（以下，X ソフトという）が有効にされている。ある日，総務部の情報セキュリティリーダーである C 課長は，部下の D さんから，次の連絡を受けた。\n・A 社の PC の Web ブラウザで Web サイトを閲覧していたところ，PC がマルウェアに感染しているとの警告画面（以下，警告画面という）が全画面に表示された。\n・警告画面が表示されたあと何も PC の操作をせずに直ちに C 課長に連絡をした。\nC 課長は，情報システム部に報告した。情報システム部は D さんの PC を確認し，数時間後，図 1 のとおり報告した。\n1. 警告画面には，次が表示されていた。\n・X ソフトの製品のロゴ\n・マルウェアを削除するためのツールをインストールする指示\n・サポートが必要な場合の電話番号とチャットウィンドウ\n2. 念のため，X ソフトを使って D さんの PC をスキャンしたが，マルウェアは検出されなかった。また，警告画面の表示は，X ソフトによるものではないことを確認した。\n3. 昨今，類似した警告画面の事例の報告が日本国内で増えている。図 1 情報システム部からの報告\nA 社では，警告画面が表示された場合の適切な対応について全従業員に周知することにした。",
+        "html": null
+      },
+      "choices": [
+        {
+          "key": "ア",
+          "text": "警告画面に，急いで対応する必要があるとの表示がある場合は，直ちに警告画面に表示された指示に従ってツールをインストールすること及びその具体的方法"
+        },
+        {
+          "key": "イ",
+          "text": "警告画面に表示された指示には従わずに，直ちに Web ブラウザを終了すること及びその具体的方法"
+        },
+        {
+          "key": "ウ",
+          "text": "警告画面に表示されたツールと 競合しないように，X ソフトをアンインストールし，警告画面に表示された指示に従ってツールをインストールすること及びその具体的方法"
+        },
+        {
+          "key": "エ",
+          "text": "警告画面に表示された電話番号に直ちに連絡し，サポートオペレーターの指示に従うこと"
+        },
+        {
+          "key": "オ",
+          "text": "警告画面に表示されている，X ソフトの製品のロゴが，製品開発元の Web サイトに掲載されている正規の製品のロゴと同じである場合は，警告画面に表示された指示に従ってツールをインストールすること及びその具体的方法試験問題に記載されている会社名又は製品名は，それぞれ各社の商標又は登録商標です。なお，試験問題では，TM 及び ® を明記していません。"
+        }
+      ],
+      "answer": [
+        "イ"
+      ],
+      "figures": [],
+      "needsFigure": true,
+      "hasTable": false,
+      "tags": {
+        "sub": null,
+        "item": null,
+        "skill": null,
+        "field": null
+      },
+      "explanation": {
+        "md": "",
+        "author": "claude",
+        "reviewed": false
+      },
+      "flags": {
+        "outdated": false,
+        "note": ""
+      },
+      "difficulty": null,
+      "parse": {
+        "status": "auto",
+        "notes": []
+      }
+    }
+  ]
+}
