@@ -4,7 +4,10 @@ iPhone だけで SG の学習（教科書・過去問演習・学習履歴）を
 
 ## 現在の状態
 
-Phase 0（コンテンツ準備）を進行中（2026-10-26）。受験日は 2026-11-29。リポジトリ: https://github.com/lammratta/sg-study
+Phase 0（コンテンツ準備）を進行中（2026-10-26）。受験日は 2026-11-29。
+
+- リポジトリ: https://github.com/lammratta/sg-study （公開）
+- 配信 URL: https://lammratta.github.io/sg-study/ （`main` に push すると自動更新）
 
 ## 文書
 
