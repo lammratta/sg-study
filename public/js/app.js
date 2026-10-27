@@ -7,8 +7,10 @@ import * as textbook from './screens/textbook.js';
 import * as quiz from './screens/quiz.js';
 import * as progress from './screens/progress.js';
 import * as settingsScreen from './screens/settings.js';
+import * as exam from './screens/exam.js';
 
-const screens = { home, textbook, quiz, progress, settings: settingsScreen };
+const screens = { home, textbook, quiz, progress, settings: settingsScreen, exam };
+const tabOf = { exam: 'quiz' };
 const root = document.getElementById('screen');
 let current = null;
 
@@ -29,7 +31,7 @@ async function route() {
   const { name, sub, params } = parseHash();
   if (current?.destroy) current.destroy();
   current = screens[name];
-  document.querySelectorAll('#tabbar a').forEach((a) => a.classList.toggle('active', a.dataset.tab === name));
+  document.querySelectorAll('#tabbar a').forEach((a) => a.classList.toggle('active', a.dataset.tab === (tabOf[name] || name)));
   document.body.classList.toggle('fullscreen', !!(current.fullscreen && current.fullscreen(sub, params)));
   window.scrollTo(0, 0);
   try {

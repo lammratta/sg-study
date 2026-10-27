@@ -1,4 +1,5 @@
 import { content } from '../content.js';
+import { checkBadges } from '../badges.js';
 import { store, settings } from '../store.js';
 import { subStats } from '../core/stats.js';
 import { esc, pct, toast, topbar } from '../ui/components.js';
@@ -68,6 +69,7 @@ async function renderPage(root, id) {
     const b = e.target.closest('button[data-r]');
     if (!b) return;
     await store.rateTopic(id, Number(b.dataset.r));
+    checkBadges(true).catch(() => {});
     root.querySelectorAll('.rating button').forEach((x) => x.classList.toggle('btn-primary', x === b));
     toast(`「${RATING[b.dataset.r]}」として記録しました`);
   });

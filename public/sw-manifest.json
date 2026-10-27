@@ -1,6 +1,6 @@
 {
   "contentVersion": 4,
-  "version": "18e5719a55ae7cee",
+  "version": "52136034fdbafef6",
   "files": [
     {
       "path": "content/figures/sample2022-b-53.webp",
@@ -8,7 +8,7 @@
     },
     {
       "path": "content/index.json",
-      "hash": "fe2c4f06845e9090"
+      "hash": "f29d7abded32d694"
     },
     {
       "path": "content/questions/2023r05.json",
@@ -192,7 +192,7 @@
     },
     {
       "path": "css/app.css",
-      "hash": "5598454ca7ed6828"
+      "hash": "243c136f514788c3"
     },
     {
       "path": "icons/apple-touch-icon-180.png",
@@ -216,11 +216,23 @@
     },
     {
       "path": "js/app.js",
-      "hash": "db18dca97cd1de79"
+      "hash": "4b05f12b26ca9161"
+    },
+    {
+      "path": "js/badges.js",
+      "hash": "0db0b1ae5c9bcee0"
     },
     {
       "path": "js/content.js",
       "hash": "e233394b30eea9c7"
+    },
+    {
+      "path": "js/core/badges.js",
+      "hash": "6fcf5bad17bb6392"
+    },
+    {
+      "path": "js/core/exam.js",
+      "hash": "0f3a4224a16376af"
     },
     {
       "path": "js/core/select.js",
@@ -239,32 +251,36 @@
       "hash": "3feefce55495cb37"
     },
     {
+      "path": "js/screens/exam.js",
+      "hash": "5053530e3859e235"
+    },
+    {
       "path": "js/screens/home.js",
-      "hash": "8dd43ac0fd967404"
+      "hash": "b2cf9680572b4f96"
     },
     {
       "path": "js/screens/progress.js",
-      "hash": "61fbb0e34c40879c"
+      "hash": "7d3c8d2e9dad37e5"
     },
     {
       "path": "js/screens/quiz.js",
-      "hash": "a975a2a5335ac429"
+      "hash": "bf1ab96bb0c6fab9"
     },
     {
       "path": "js/screens/settings.js",
-      "hash": "ce8198d5e3790fbd"
+      "hash": "80fa1832f872ff31"
     },
     {
       "path": "js/screens/textbook.js",
-      "hash": "0d04562a447c79d0"
+      "hash": "b1dfe5baee1ac682"
     },
     {
       "path": "js/store.js",
-      "hash": "2dff819b599e585e"
+      "hash": "9ff53a2c4eda13f8"
     },
     {
       "path": "js/ui/charts.js",
-      "hash": "a5c0ffa82a0f1896"
+      "hash": "a8f895afcf789b19"
     },
     {
       "path": "js/ui/components.js",

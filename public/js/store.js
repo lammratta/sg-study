@@ -4,7 +4,7 @@ import { nextSrs } from './core/srs.js';
 import { dayKey } from './core/stats.js';
 
 const SETTINGS_KEY = 'sg-study.settings';
-const DEFAULTS = { examDate: '2026-11-29', dailyGoal: 10, theme: 'system', includeOutdated: true, sessionSize: 10, lastBackupTs: 0, backupCount: 0 };
+const DEFAULTS = { examDate: '2026-11-29', dailyGoal: 10, theme: 'system', includeOutdated: true, sessionSize: 10, lastBackupTs: 0, backupCount: 0, strictExamTimer: false };
 
 export const settings = {
   get() { try { return { ...DEFAULTS, ...JSON.parse(localStorage.getItem(SETTINGS_KEY) || '{}') }; } catch { return { ...DEFAULTS }; } },
@@ -76,7 +76,41 @@ export const store = {
     return state.bookmarked;
   },
 
+  /** 複数回答をまとめて記録する（模試の提出用）。SRS は mode が exam なら更新しない */
+  async recordAttempts(list) {
+    const now = Date.now();
+    const day = dayKey(new Date(now));
+    const ops = new Map();
+    const d0 = this.daily.get(day) || { day, answered: 0, correct: 0, studyMs: 0, topicsRead: 0, sessions: 0 };
+    let dn = { ...d0 };
+    const attempts = [];
+    for (const { qid, chosen, correct, elapsedMs, mode, sessionId } of list) {
+      const elapsed = Math.min(Math.max(elapsedMs || 0, 0), 5 * 60 * 1000);
+      const prev = this.states.get(qid) || { qid, attempts: 0, correct: 0, wrong: 0, streak: 0, lastTs: 0, lastCorrect: null, srs: null, bookmarked: false, note: '' };
+      const state = { ...prev, attempts: prev.attempts + 1, correct: prev.correct + (correct ? 1 : 0), wrong: prev.wrong + (correct ? 0 : 1), streak: correct ? prev.streak + 1 : 0, lastTs: now, lastCorrect: correct, srs: mode === 'exam' ? prev.srs : nextSrs(prev.srs, correct, now) };
+      this.states.set(qid, state);
+      ops.set(qid, { store: 'questionState', value: state });
+      dn = { ...dn, answered: dn.answered + 1, correct: dn.correct + (correct ? 1 : 0), studyMs: dn.studyMs + elapsed };
+      attempts.push({ qid, ts: now, day, mode, chosen, correct, elapsedMs: elapsed, sessionId });
+    }
+    for (const a of attempts) await db.add('attempts', a);
+    await db.putMany([...ops.values(), { store: 'dailyStats', value: dn }]);
+    this.daily.set(day, dn);
+  },
+
   async saveSession(session) { await db.put('sessions', session); },
+  async listSessions() { return db.getAll('sessions'); },
+
+  /* 模試 */
+  async saveExam(exam) { await db.put('exams', exam); return exam; },
+  async getExam(id) { return db.get('exams', id); },
+  async listExams() { return (await db.getAll('exams')).sort((a, b) => a.startTs - b.startTs); },
+  async runningExam() { return (await db.getAll('exams')).find((e) => e.status === 'running') || null; },
+
+  /* 実績（meta に取得日時を保存） */
+  async getBadges() { return (await db.get('meta', 'badges'))?.earned || {}; },
+  async saveBadges(earned) { await db.put('meta', { key: 'badges', earned }); },
+  async countAttempts(pred) { return (await db.getAll('attempts')).filter(pred).length; },
 
   async exportJson() {
     const stores = await db.dump();

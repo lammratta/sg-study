@@ -19,6 +19,9 @@ export async function render(root) {
   const answeredSince = [...store.states.values()].reduce((n, x) => n + (x.attempts || 0), 0);
   const rd = readiness(content.questions, store.states, content.subs);
   const nextTopic = content.topics.find((t) => (store.topics.get(t.id)?.rating || 0) < 2);
+  const exams = (await store.listExams()).filter((e) => e.status === 'done' && e.result);
+  const lastExam = exams[exams.length - 1];
+  const runningExam = (await store.runningExam());
   const needBackup = (backupAge === null && answeredSince >= 30) || (backupAge !== null && backupAge >= 14);
   root.innerHTML = `
     <div class="row" style="justify-content:space-between"><h1 style="margin:0">SG 学習</h1>
@@ -37,6 +40,10 @@ export async function render(root) {
       ${weak.length ? `<a class="list-item" href="#quiz/run?mode=sub&sub=${weak[0].sub}&count=${s.sessionSize || 10}"><div class="grow"><div>弱点分野: ${esc(weak[0].name)}</div><div class="muted">正答率 ${pct(weak[0].accuracy)}（${weak[0].attempted} 問）</div></div><span class="chev">›</span></a>` : ''}
       ${nextTopic ? `<a class="list-item" href="#textbook/${nextTopic.id}"><div class="grow"><div>教科書: ${esc(nextTopic.title)}</div><div class="muted">${(store.topics.get(nextTopic.id)?.rating || 0) === 1 ? '学習中' : '未読'} ・ 約 ${nextTopic.readingMinutes} 分</div></div><span class="chev">›</span></a>` : ''}
       ${!due && !weak.length && !nextTopic ? '<div class="muted">演習を始めると、復習と弱点がここに出ます。</div>' : ''}
+    </div>
+    <h2>模擬試験</h2>
+    <div class="list">
+      <a class="list-item" href="#exam${runningExam ? '/run' : ''}"><div class="grow"><div>${runningExam ? '途中の模試を再開' : '本番形式 60 問・120 分'}</div><div class="muted">${runningExam ? `問 ${runningExam.idx + 1} / ${runningExam.qids.length} まで回答` : lastExam ? `前回 ${lastExam.result.scaled} 点（${exams.length} 回受験）` : 'まだ受けていません。1 周したら力試しに'}</div></div><span class="chev">›</span></a>
     </div>
     ${needBackup ? `<a class="list-item" href="#settings" style="margin-top:12px"><div class="grow"><div>バックアップをおすすめします</div><div class="muted">${backupAge === null ? 'まだ一度も保存していません' : `最後の保存から ${backupAge} 日`}</div></div><span class="chev">›</span></a>` : ''}`;
 }

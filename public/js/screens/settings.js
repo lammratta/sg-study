@@ -14,6 +14,7 @@ export async function render(root) {
       <label class="field"><span>1 日の目標（問）</span><input type="number" id="dailyGoal" min="1" max="200" value="${s.dailyGoal}" style="width:90px"></label>
       <label class="field"><span>テーマ</span><select id="theme"><option value="system" ${s.theme === 'system' ? 'selected' : ''}>端末に合わせる</option><option value="light" ${s.theme === 'light' ? 'selected' : ''}>ライト</option><option value="dark" ${s.theme === 'dark' ? 'selected' : ''}>ダーク</option></select></label>
       <label class="field"><span>制度変更で古くなった問題も出題する</span><input type="checkbox" id="includeOutdated" ${s.includeOutdated ? 'checked' : ''}></label>
+      <label class="field"><span>模試タイマーの厳格モード<br><span class="muted">画面を閉じても時計を止めない（本番同様）</span></span><input type="checkbox" id="strictExamTimer" ${s.strictExamTimer ? 'checked' : ''}></label>
     </div>
     <h2>バックアップ</h2>
     <div class="card">
@@ -42,6 +43,7 @@ export async function render(root) {
   root.querySelector('#dailyGoal').onchange = (e) => save({ dailyGoal: Math.max(1, Number(e.target.value) || 10) });
   root.querySelector('#theme').onchange = (e) => { save({ theme: e.target.value }); applyTheme(); };
   root.querySelector('#includeOutdated').onchange = (e) => save({ includeOutdated: e.target.checked });
+  root.querySelector('#strictExamTimer').onchange = (e) => save({ strictExamTimer: e.target.checked });
   root.querySelector('#export').onclick = async () => {
     const data = await store.exportJson();
     const name = `sg-study-backup-${new Date().toISOString().slice(0, 10)}.json`;

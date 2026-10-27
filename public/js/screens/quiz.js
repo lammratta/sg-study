@@ -5,6 +5,7 @@ import { pickQuestions, pickUnseenFirst, weakSubs } from '../core/select.js';
 import { dueQuestions } from '../core/srs.js';
 import { subStats, endOfDay } from '../core/stats.js';
 import { esc, toast, topbar, pct, fmtMin } from '../ui/components.js';
+import { checkBadges } from '../badges.js';
 
 const SESSION_KEY = 'sg-study.session';
 let session = null;
@@ -97,6 +98,10 @@ function renderMenu(root) {
     <h2>科目B <span class="muted">（${nB} 問）</span></h2>
     <div class="list">
       <a class="list-item" href="#quiz/run?mode=case"><div class="grow"><div>ケース演習</div><div class="muted">長文の事例を読んで解答群から選ぶ</div></div><span class="chev">›</span></a>
+    </div>
+    <h2>模擬試験</h2>
+    <div class="list">
+      <a class="list-item" href="#exam"><div class="grow"><div>本番形式 60 問・120 分</div><div class="muted">科目A 48 問 + 科目B 12 問。提出後にまとめて採点</div></div><span class="chev">›</span></a>
     </div>`;
   const countEl = root.querySelector('#count');
   const subEl = root.querySelector('#sub');
@@ -196,6 +201,7 @@ async function renderDone(root) {
   for (const r of s.results) { const sub = content.byId.get(r.qid)?.sub; const a = bySub.get(sub) || { n: 0, c: 0 }; a.n += 1; a.c += r.correct ? 1 : 0; bySub.set(sub, a); }
   const today = store.daily.get(new Date().toISOString().slice(0, 10)) || store.daily.get([...store.daily.keys()].sort().pop());
   session = null; saveSession();
+  checkBadges(true).catch(() => {});
   root.innerHTML = `
     ${topbar('結果', '#quiz')}
     <div class="card"><div class="summary-big">${c} / ${n}</div><div class="muted" style="text-align:center">正答率 ${pct(n ? c / n : 0)} ・ 所要 ${fmtMin(Date.now() - s.startTs)}</div></div>
