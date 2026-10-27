@@ -1,13 +1,13 @@
 {
-  "contentVersion": 1,
-  "hash": "db96062225a7c354",
-  "builtAt": "2026-10-26T05:43:29.068Z",
+  "contentVersion": 2,
+  "hash": "08c03f12e434fad9",
+  "builtAt": "2026-10-27T01:14:29.209Z",
   "counts": {
     "questionsA": 96,
     "questionsB": 26,
-    "reviewed": 0,
+    "reviewed": 122,
     "topics": 0,
-    "figures": 0
+    "figures": 1
   },
   "files": {
     "syllabus.json": {
@@ -15,32 +15,36 @@
       "bytes": 8355
     },
     "questions/index.json": {
-      "hash": "03b861b6680518f6",
-      "bytes": 20216
+      "hash": "2af9ddee712eba26",
+      "bytes": 19857
     },
     "questions/2023r05.json": {
-      "hash": "2e1bdb7d57e5a6ff",
-      "bytes": 28697
+      "hash": "1e0d3c43eaddad7b",
+      "bytes": 52078
     },
     "questions/2024r06.json": {
-      "hash": "cbcb41931c9c2b49",
-      "bytes": 24454
+      "hash": "b29f8a1fb255a018",
+      "bytes": 48028
     },
     "questions/2025r07.json": {
-      "hash": "4f602b373894c73f",
-      "bytes": 31008
+      "hash": "4da455fee4092064",
+      "bytes": 57111
     },
     "questions/2026r08.json": {
-      "hash": "02732452a6598d34",
-      "bytes": 31811
+      "hash": "11097cb23c5df9c8",
+      "bytes": 57806
     },
     "questions/sample2022.json": {
-      "hash": "8d228c225dec0715",
-      "bytes": 106554
+      "hash": "ad76dd82c5facd4a",
+      "bytes": 205952
     },
     "questions/sample2022b.json": {
-      "hash": "f3f6017c417f0b52",
-      "bytes": 10747
+      "hash": "d969ae38a28804d7",
+      "bytes": 15124
+    },
+    "figures/sample2022-b-53.webp": {
+      "hash": "041b4d63755a7923",
+      "bytes": 14734
     }
   }
 }
