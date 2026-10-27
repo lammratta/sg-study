@@ -139,11 +139,8 @@ if (fs.existsSync(figDir)) {
 
 // contentVersion: 中身が変わったときだけ増やす
 const combined = sha(Object.keys(written).sort().map((k) => `${k}:${written[k].hash}`).join('\n'));
-let prev = null;
-try { prev = readJson(path.join(OUT, 'index.json')); } catch { /* 初回 */ }
-const prevHash = prev?.hash;
-let prevVersion = prev?.contentVersion || 0;
-try { prevVersion = readJson(path.join(ROOT, 'content-src', 'version.json')).contentVersion; } catch { /* なし */ }
+let prevHash = null, prevVersion = 0;
+try { const v = readJson(path.join(ROOT, 'content-src', 'version.json')); prevHash = v.hash; prevVersion = v.contentVersion; } catch { /* 初回 */ }
 const contentVersion = combined === prevHash ? prevVersion : prevVersion + 1;
 fs.writeFileSync(path.join(ROOT, 'content-src', 'version.json'), JSON.stringify({ contentVersion, hash: combined }, null, 2) + '\n');
 const indexJson = {
@@ -162,5 +159,11 @@ const walk = (dir, base = '') => fs.readdirSync(dir, { withFileTypes: true }).fl
   if (['sw.js', 'sw-manifest.json', '_headers'].includes(rel)) return [];
   return [{ path: rel, hash: sha(fs.readFileSync(path.join(dir, e.name))) }];
 });
-fs.writeFileSync(path.join(PUBLIC, 'sw-manifest.json'), JSON.stringify({ contentVersion, files: walk(PUBLIC) }, null, 2));
+const publicFiles = walk(PUBLIC);
+const appVersion = sha(publicFiles.map((f) => `${f.path}:${f.hash}`).join('\n'));
+fs.writeFileSync(path.join(PUBLIC, 'sw-manifest.json'), JSON.stringify({ contentVersion, version: appVersion, files: publicFiles }, null, 2));
+// Service Worker をテンプレートから生成（バージョンが変わると sw.js の中身が変わり、ブラウザが更新を検知する）
+const swTemplate = fs.readFileSync(path.join(ROOT, 'scripts', 'sw.template.js'), 'utf8');
+fs.writeFileSync(path.join(PUBLIC, 'sw.js'), swTemplate.replaceAll('__VERSION__', appVersion));
+console.log(`sw.js を生成しました（version ${appVersion}）`);
 console.log(`public/content/ を生成しました（contentVersion ${contentVersion}、${Object.keys(written).length} ファイル）`);

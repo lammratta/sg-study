@@ -1,0 +1,16 @@
+{
+  "name": "SG 学習",
+  "short_name": "SG学習",
+  "description": "情報セキュリティマネジメント試験（SG）の個人用学習アプリ",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f7fb",
+  "theme_color": "#2f6fed",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

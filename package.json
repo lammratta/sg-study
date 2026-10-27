@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "npx --yes serve public -l 8080",
+    "build": "node scripts/build-content.mjs",
     "build:content": "node scripts/build-content.mjs",
     "test": "node --test tests/*.test.mjs"
   },

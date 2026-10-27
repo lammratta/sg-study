@@ -1,5 +1,6 @@
 {
   "contentVersion": 2,
+  "version": "5b99d8ad57d7fed7",
   "files": [
     {
       "path": "content/figures/sample2022-b-53.webp",
@@ -7,7 +8,7 @@
     },
     {
       "path": "content/index.json",
-      "hash": "706176010bc42b3e"
+      "hash": "57a03df26c3e84f4"
     },
     {
       "path": "content/questions/2023r05.json",
@@ -42,8 +43,88 @@
       "hash": "fac50471219bdcdc"
     },
     {
+      "path": "css/app.css",
+      "hash": "40ddbb995f66e674"
+    },
+    {
+      "path": "icons/apple-touch-icon-180.png",
+      "hash": "adedc0dbc7d9e43f"
+    },
+    {
+      "path": "icons/icon-192.png",
+      "hash": "1b5c8a5650552df7"
+    },
+    {
+      "path": "icons/icon-512-maskable.png",
+      "hash": "c5d6fb8cba8cd305"
+    },
+    {
+      "path": "icons/icon-512.png",
+      "hash": "62b1c7e6e05d9beb"
+    },
+    {
       "path": "index.html",
-      "hash": "b4c7bd1e5bdef292"
+      "hash": "a6e5171a95ed48ab"
+    },
+    {
+      "path": "js/app.js",
+      "hash": "db18dca97cd1de79"
+    },
+    {
+      "path": "js/content.js",
+      "hash": "5731e67e651401f0"
+    },
+    {
+      "path": "js/core/select.js",
+      "hash": "eb44b19cb1ff9a3d"
+    },
+    {
+      "path": "js/core/srs.js",
+      "hash": "02e797477a9037a2"
+    },
+    {
+      "path": "js/core/stats.js",
+      "hash": "5967e948af936a25"
+    },
+    {
+      "path": "js/db.js",
+      "hash": "3feefce55495cb37"
+    },
+    {
+      "path": "js/screens/home.js",
+      "hash": "e5e18a0a124cfd65"
+    },
+    {
+      "path": "js/screens/progress.js",
+      "hash": "0606c8cfc1f9b37c"
+    },
+    {
+      "path": "js/screens/quiz.js",
+      "hash": "4dd3c0be33e347be"
+    },
+    {
+      "path": "js/screens/settings.js",
+      "hash": "ce8198d5e3790fbd"
+    },
+    {
+      "path": "js/screens/textbook.js",
+      "hash": "90445000e9eeafad"
+    },
+    {
+      "path": "js/store.js",
+      "hash": "6e21129a701abbdf"
+    },
+    {
+      "path": "js/ui/charts.js",
+      "hash": "a5c0ffa82a0f1896"
+    },
+    {
+      "path": "js/ui/components.js",
+      "hash": "887b82686b1836de"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "hash": "410e71f9a7562b55"
     }
   ]
 }
