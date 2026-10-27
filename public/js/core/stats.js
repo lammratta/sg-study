@@ -71,3 +71,32 @@ export function totals(states) {
   for (const s of states.values()) { answered += s.attempts || 0; correct += s.correct || 0; if (s.attempts) seen += 1; }
   return { answered, correct, seen };
 }
+
+export const DEFAULT_WEIGHTS = { aCore: 0.55, aRelated: 0.25, b: 0.2 };
+
+/** 合格目安スコア（1000 点換算の目安。IRT ではない）。グループごとの最新回答の正答率を配点ウェイトで合成する */
+export function readiness(index, states, subs, weights = DEFAULT_WEIGHTS) {
+  const g = { aCore: { n: 0, c: 0 }, aRelated: { n: 0, c: 0 }, b: { n: 0, c: 0 } };
+  for (const q of index) {
+    const s = states.get(q.id);
+    if (!s?.attempts) continue;
+    const key = q.kind === 'B' ? 'b' : subs.get(q.sub)?.kind === '重点' ? 'aCore' : 'aRelated';
+    g[key].n += 1;
+    if (s.lastCorrect) g[key].c += 1;
+  }
+  let score = 0;
+  const missing = [];
+  for (const k of Object.keys(weights)) {
+    if (g[k].n === 0) missing.push(k);
+    else score += weights[k] * (g[k].c / g[k].n);
+  }
+  const total = g.aCore.n + g.aRelated.n + g.b.n;
+  return { score: Math.round(score * 1000), groups: g, missing, enough: total >= 20 };
+}
+
+/** 定着率: 間隔反復で 7 日以上の段に達した問題の割合 */
+export function retention(index, states) {
+  let n = 0, done = 0;
+  for (const q of index) { n += 1; const s = states.get(q.id); if (s?.srs && s.srs.step >= 2) done += 1; }
+  return { n, done, ratio: n ? done / n : 0 };
+}

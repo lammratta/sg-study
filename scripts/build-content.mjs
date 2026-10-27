@@ -91,18 +91,33 @@ for (const file of files) {
 }
 for (const s of sets.values()) s.questions.sort((a, b) => a.source.no - b.source.no);
 
-// ---- 教科書（Phase 2 で追加。今は存在すれば変換する）-------------------------
+// ---- 教科書 -------------------------------------------------------------
 const topics = [];
 const tdir = path.join(SRC, 'textbook');
+const pageSpecs = fs.existsSync(path.join(tdir, 'pages.json')) ? readJson(path.join(tdir, 'pages.json')) : [];
+const specById = new Map(pageSpecs.map((p) => [p.id, p]));
+const qidsBySub = new Map();
+for (const i of index) { if (!i.sub) continue; if (!qidsBySub.has(i.sub)) qidsBySub.set(i.sub, []); qidsBySub.get(i.sub).push(i.id); }
 if (fs.existsSync(tdir)) {
-  for (const f of fs.readdirSync(tdir).filter((f) => f.endsWith('.md')).sort()) {
+  for (const f of fs.readdirSync(tdir).filter((f) => f.endsWith('.md') && f !== 'README.md').sort()) {
     const raw = fs.readFileSync(path.join(tdir, f), 'utf8');
-    const m = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+    const m = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
     if (!m) { errors.push(`textbook/${f}: frontmatter がない`); continue; }
-    const meta = Object.fromEntries(m[1].split('\n').filter(Boolean).map((l) => { const i = l.indexOf(':'); return [l.slice(0, i).trim(), l.slice(i + 1).trim()]; }));
-    topics.push({ id: meta.id || f.replace(/\.md$/, ''), title: meta.title || '', topicIds: (meta.topicIds || '').split(',').map((s) => s.trim()).filter(Boolean), html: marked.parse(m[2]), readingMinutes: Number(meta.readingMinutes || 5), updatedAt: meta.updatedAt || '' });
+    const meta = Object.fromEntries(m[1].split(/\r?\n/).filter(Boolean).map((l) => { const i = l.indexOf(':'); return [l.slice(0, i).trim(), l.slice(i + 1).trim()]; }));
+    const id = meta.id || f.replace(/\.md$/, '');
+    const spec = specById.get(id);
+    if (!spec) warnings.push(`textbook/${f}: pages.json にない id ${id}`);
+    const sub = meta.sub || spec?.sub;
+    if (!sub || !subIndex.has(sub)) errors.push(`textbook/${f}: sub "${sub}" がシラバスにない`);
+    const body = m[2];
+    for (const h of ['## 要点', '## 解説', '## 試験での問われ方', '## 用語集']) if (!body.includes(h)) warnings.push(`textbook/${f}: 見出し「${h}」がない`);
+    const terms = [...body.matchAll(/^- \*\*(.+?)\*\*[:：]/gm)].map((x) => x[1].trim());
+    const summary = (body.split('## 解説')[0].match(/^- (.+)$/gm) || []).map((l) => l.slice(2).trim());
+    topics.push({ id, title: meta.title || spec?.title || id, sub, order: Number(meta.order || spec?.order || 0), summary, html: marked.parse(body), terms, readingMinutes: Number(meta.readingMinutes || 6), updatedAt: meta.updatedAt || '', relatedQuestionIds: qidsBySub.get(sub) || [] });
   }
 }
+topics.sort((a, b) => (a.sub === b.sub ? a.order - b.order : [...subIndex.keys()].indexOf(a.sub) - [...subIndex.keys()].indexOf(b.sub)));
+for (const p of pageSpecs) if (!topics.find((t) => t.id === p.id)) warnings.push(`textbook: 未執筆 ${p.id} ${p.title}`);
 
 // ---- 結果 -----------------------------------------------------------------
 const total = index.length;
@@ -127,6 +142,7 @@ const write = (rel, obj) => {
 write('syllabus.json', syllabus);
 write('questions/index.json', index);
 for (const s of sets.values()) write(`questions/${s.setId}.json`, s);
+write('textbook/index.json', topics.map((t) => ({ id: t.id, title: t.title, sub: t.sub, order: t.order, terms: t.terms, readingMinutes: t.readingMinutes, questions: t.relatedQuestionIds.length })));
 for (const t of topics) write(`textbook/${t.id}.json`, t);
 const figDir = path.join(SRC, 'figures');
 if (fs.existsSync(figDir)) {

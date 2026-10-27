@@ -1,6 +1,6 @@
 import { content } from '../content.js';
 import { store, settings } from '../store.js';
-import { streak, heatmap, subStats, totals } from '../core/stats.js';
+import { streak, heatmap, subStats, totals, readiness, retention } from '../core/stats.js';
 import { esc, pct, fmtMin } from '../ui/components.js';
 import { bar, heatmapHtml } from '../ui/charts.js';
 
@@ -15,6 +15,10 @@ export async function render(root) {
     <a class="row" style="padding:6px 0;text-decoration:none;color:inherit" href="#quiz/run?mode=sub&sub=${x.sub}&count=${s.sessionSize || 10}">
       <div class="grow"><div class="row" style="justify-content:space-between"><span>${x.kind === '重点' ? '★ ' : ''}${esc(x.name)}${x.weak ? ' <span class="badge badge-warn">弱点</span>' : ''}</span><span class="muted">${x.correct} / ${x.attempted}（全 ${x.total}）</span></div>
       ${bar(x.attempted ? x.accuracy : 0, x.attempted ? (x.accuracy >= 0.8 ? 'ok' : x.weak ? 'ng' : '') : '')}</div></a>`).join('');
+  const rd = readiness(content.questions, store.states, content.subs);
+  const rt = retention(content.questions.filter((q) => q.kind === 'A'), store.states);
+  const topicsDone = content.topics.filter((t) => store.topics.get(t.id)?.rating === 2).length;
+  const groupName = { aCore: '科目A 重点分野', aRelated: '科目A 関連分野', b: '科目B' };
   const sessions = (await (await import('../db.js')).getAll('sessions')).sort((a, b) => b.endTs - a.endTs).slice(0, 5);
   root.innerHTML = `
     <h1>進捗</h1>
@@ -23,6 +27,10 @@ export async function render(root) {
       <div class="stat"><div class="v">${t.answered ? pct(t.correct / t.answered) : '–'}</div><div class="l">累計正答率</div></div>
       <div class="stat"><div class="v">${streak(store.daily)}</div><div class="l">連続日数</div></div>
     </div>
+    <div class="card"><div class="card-title">合格目安 <span class="muted">（1,000 点換算の目安。本番は IRT 採点）</span></div>
+      ${rd.enough ? `<div class="summary-big" style="color:${rd.score >= 600 ? 'var(--ok)' : 'var(--text)'}">${rd.score} <span class="muted" style="font-size:1rem">/ 1000</span></div>${bar(rd.score / 1000, rd.score >= 600 ? 'ok' : '')}` : `<div class="muted">20 問以上回答すると表示されます（今 ${rd.groups.aCore.n + rd.groups.aRelated.n + rd.groups.b.n} 問）</div>`}
+      <div class="muted" style="margin-top:6px">${Object.entries(rd.groups).map(([k, g]) => `${groupName[k]} ${g.n ? pct(g.c / g.n) : '未着手'}`).join(' ・ ')}</div>
+      <div class="muted">定着（7 日以上の間隔に到達）${rt.done} / ${rt.n} 問 ・ 教科書 理解した ${topicsDone} / ${content.topics.length} ページ</div></div>
     <div class="card"><div class="card-title">学習カレンダー <span class="muted">（直近 16 週・${fmtMin(studyMs)}）</span></div>${heatmapHtml(heatmap(store.daily), s.dailyGoal)}</div>
     <div class="card"><div class="card-title">科目A 分野別 <span class="muted">（最新回答の正答率。タップで演習）</span></div>${rows(statsA) || '<div class="muted">まだ記録がありません</div>'}</div>
     <div class="card"><div class="card-title">科目B</div>${rows(statsB) || '<div class="muted">まだ記録がありません</div>'}</div>

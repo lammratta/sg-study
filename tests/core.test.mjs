@@ -73,3 +73,24 @@ test('ヒートマップ: 今日で終わる', () => {
   assert.equal(cells.at(-1).day, '2026-10-27');
   assert.ok(cells.length >= 14);
 });
+
+import { readiness, retention } from '../public/js/core/stats.js';
+
+test('合格目安: グループ別正答率をウェイトで合成し、20 問未満は enough=false', () => {
+  const subs = new Map([['A1-1', { kind: '重点' }], ['A5-1', { kind: '関連' }]]);
+  const index = [];
+  const states = new Map();
+  for (let i = 0; i < 10; i++) { index.push({ id: `c${i}`, kind: 'A', sub: 'A1-1' }); states.set(`c${i}`, { attempts: 1, lastCorrect: i < 8 }); }
+  for (let i = 0; i < 10; i++) { index.push({ id: `r${i}`, kind: 'A', sub: 'A5-1' }); states.set(`r${i}`, { attempts: 1, lastCorrect: i < 5 }); }
+  const r = readiness(index, states, subs);
+  assert.equal(r.score, Math.round((0.55 * 0.8 + 0.25 * 0.5) * 1000));
+  assert.deepEqual(r.missing, ['b']);
+  assert.equal(r.enough, true);
+  assert.equal(readiness(index.slice(0, 5), states, subs).enough, false);
+});
+
+test('定着率: step 2 以上の割合', () => {
+  const index = [{ id: 'a' }, { id: 'b' }, { id: 'c' }];
+  const states = new Map([['a', { srs: { step: 2 } }], ['b', { srs: { step: 0 } }]]);
+  assert.deepEqual(retention(index, states), { n: 3, done: 1, ratio: 1 / 3 });
+});

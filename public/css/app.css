@@ -114,3 +114,19 @@ label.field:last-child { border-bottom: 0; }
 .bottom-bar .btn { max-width: 680px; margin-inline: auto; }
 .summary-big { font-size: 2rem; font-weight: 700; text-align: center; margin: 8px 0; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* 教科書 */
+input[type="search"] { min-height: 44px; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); font-size: 16px; -webkit-appearance: none; }
+.badge-ok { background: var(--ok-bg); color: var(--ok); } .badge-mid { background: #fff3e0; color: var(--warn); }
+:root[data-theme="dark"] .badge-mid { background: #3a2a14; }
+.topic { font-size: 1rem; line-height: 1.8; }
+.topic h2 { font-size: 1.1rem; color: var(--text); margin: 22px 0 8px; padding-left: 10px; border-left: 4px solid var(--accent); }
+.topic h3 { font-size: 1rem; margin: 16px 0 6px; }
+.topic p { margin: 0 0 .8em; } .topic ul, .topic ol { padding-left: 1.3em; margin: .3em 0 .8em; } .topic li { margin: .15em 0; }
+.topic table { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: .92rem; display: block; overflow-x: auto; }
+.topic th, .topic td { border: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: top; } .topic th { background: var(--heat0); }
+.topic code { background: var(--heat0); padding: 1px 5px; border-radius: 4px; font-size: .92em; }
+.topic blockquote { margin: 8px 0; padding: 8px 12px; border-left: 3px solid var(--line); color: var(--muted); }
+.rating { display: flex; gap: 8px; } .rating .btn { width: auto; flex: 1; min-height: 44px; margin: 0; }
+.q-label { font-weight: 700; margin: 12px 0 4px; color: var(--muted); font-size: .85rem; }
+.case-wrap { max-height: 48vh; }

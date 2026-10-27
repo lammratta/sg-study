@@ -14,11 +14,13 @@ export const settings = {
 export const store = {
   states: new Map(),
   daily: new Map(),
+  topics: new Map(),
 
   async load() {
-    const [states, daily] = await Promise.all([db.getAll('questionState'), db.getAll('dailyStats')]);
+    const [states, daily, topics] = await Promise.all([db.getAll('questionState'), db.getAll('dailyStats'), db.getAll('topicState')]);
     this.states = new Map(states.map((s) => [s.qid, s]));
     this.daily = new Map(daily.map((d) => [d.day, d]));
+    this.topics = new Map(topics.map((t) => [t.topicId, t]));
     return this;
   },
 
@@ -46,6 +48,24 @@ export const store = {
     this.states.set(qid, state);
     this.daily.set(day, dailyNext);
     return state;
+  },
+
+  /** 教科書の理解度（0 未学習 / 1 学習中 / 2 理解した）。その日初めての記録なら topicsRead を増やす */
+  async rateTopic(topicId, rating) {
+    const now = Date.now();
+    const day = dayKey(new Date(now));
+    const prev = this.topics.get(topicId) || { topicId, rating: 0, lastTs: 0, readCount: 0, lastReadDay: '' };
+    const t = { ...prev, rating, lastTs: now, readCount: prev.readCount + 1, lastReadDay: day };
+    const ops = [{ store: 'topicState', value: t }];
+    if (prev.lastReadDay !== day) {
+      const d = this.daily.get(day) || { day, answered: 0, correct: 0, studyMs: 0, topicsRead: 0, sessions: 0 };
+      const dn = { ...d, topicsRead: (d.topicsRead || 0) + 1 };
+      ops.push({ store: 'dailyStats', value: dn });
+      this.daily.set(day, dn);
+    }
+    await db.putMany(ops);
+    this.topics.set(topicId, t);
+    return t;
   },
 
   async toggleBookmark(qid) {
@@ -101,9 +121,11 @@ export const store = {
     for (const [qid, s] of old) if (!states.has(qid) && (s.bookmarked || s.note)) states.set(qid, { ...s, attempts: 0, correct: 0, wrong: 0, streak: 0, lastTs: 0, lastCorrect: null, srs: null });
     const ops = [...states.values()].map((v) => ({ store: 'questionState', value: v })).concat([...daily.values()].map((v) => ({ store: 'dailyStats', value: v })));
     if (ops.length) await db.putMany(ops);
+    for (const [k, v] of this.daily) if (!daily.has(k) && v.topicsRead) daily.set(k, { ...v, answered: 0, correct: 0, studyMs: 0 }); else if (daily.has(k)) daily.get(k).topicsRead = v.topicsRead || 0;
+    if (daily.size) await db.putMany([...daily.values()].map((v) => ({ store: 'dailyStats', value: v })));
     this.states = states;
     this.daily = daily;
   },
 
-  async resetAll() { await db.clearAll(); this.states = new Map(); this.daily = new Map(); },
+  async resetAll() { await db.clearAll(); this.states = new Map(); this.daily = new Map(); this.topics = new Map(); },
 };

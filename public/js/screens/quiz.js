@@ -27,7 +27,12 @@ export function buildSession(mode, params = {}) {
   const now = Date.now();
   let qids = [];
   let label = '';
-  if (mode === 'review') {
+  if (mode === 'ids') {
+    const ids = String(params.ids || '').split(',').filter((x) => content.byId.has(x));
+    const entries = ids.map((x) => content.byId.get(x));
+    qids = pickUnseenFirst(entries, store.states, Math.min(count, ids.length) || ids.length, now);
+    label = params.label || '関連問題';
+  } else if (mode === 'review') {
     qids = dueQuestions([...store.states.values()], endOfDay(), 50).slice(0, count);
     label = '今日の復習';
   } else if (mode === 'bookmark') {
@@ -124,14 +129,14 @@ async function renderRun(root, params) {
     ${topbar(session.label, '#quiz')}
     <div class="q-head"><span>${session.idx + 1} / ${session.qids.length}</span><span>${esc(content.subName(q.tags.sub))}${q.difficulty ? ' ・ 難易度 ' + '★'.repeat(q.difficulty) : ''}</span></div>
     ${q.flags.outdated ? `<div class="outdated">注意: ${esc(q.flags.note || '制度変更により現在の扱いが異なる可能性があります')}</div>` : ''}
-    ${q.kind === 'B' ? `<div class="case-wrap" id="case"><div class="case">${q.caseHtml}${figs('case')}</div></div><button class="btn btn-small btn-ghost" id="case-toggle" type="button">本文を全部表示</button>` : ''}
+    ${q.kind === 'B' ? `<div class="case-wrap ${sessionStorage.getItem('sg-study.caseExpanded') ? 'expanded' : ''}" id="case"><div class="case">${q.caseHtml}${figs('case')}</div></div><button class="btn btn-small btn-ghost" id="case-toggle" type="button">${sessionStorage.getItem('sg-study.caseExpanded') ? '本文を折りたたむ' : '本文を全部表示'}</button><div class="q-label">設問</div>` : ''}
     <div class="q-stem">${q.stemHtml}${figs('stem')}</div>
     <div class="choices" id="choices">${q.choices.map((c) => `<button class="choice" type="button" data-key="${c.key}"><span class="k">${c.key}</span><span>${c.html}</span></button>`).join('')}</div>
     <div class="result hidden" id="result"></div>
     <div class="bottom-bar hidden" id="next-bar"><button class="btn btn-primary" id="next" type="button">次へ ›</button></div>`;
   shownAt = Date.now();
   const toggle = root.querySelector('#case-toggle');
-  if (toggle) toggle.onclick = () => { const c = root.querySelector('#case'); c.classList.toggle('expanded'); toggle.textContent = c.classList.contains('expanded') ? '本文を折りたたむ' : '本文を全部表示'; };
+  if (toggle) toggle.onclick = () => { const c = root.querySelector('#case'); c.classList.toggle('expanded'); const on = c.classList.contains('expanded'); toggle.textContent = on ? '本文を折りたたむ' : '本文を全部表示'; try { on ? sessionStorage.setItem('sg-study.caseExpanded', '1') : sessionStorage.removeItem('sg-study.caseExpanded'); } catch { /* ignore */ } };
   root.querySelector('#choices').addEventListener('click', async (e) => {
     const btn = e.target.closest('.choice');
     if (!btn || btn.disabled) return;
@@ -158,12 +163,18 @@ async function answer(root, q, key) {
   res.innerHTML = `
     <div class="verdict ${correct ? 'ok' : 'ng'}">${correct ? '正解' : '不正解'}（正解: ${q.answer.join('，')}）${state.streak >= 2 && correct ? ` <span class="badge">${state.streak} 連続</span>` : ''}</div>
     <div class="explanation">${q.explanationHtml || '<p class="muted">解説は準備中です。</p>'}</div>
+    ${relatedTopicLink(q)}
     <div class="citation">出典: ${esc(q.source.citation)}${q.source.modified ? `（原文の一部を変更: ${esc(q.source.modifiedNote)}）` : ''}</div>
     <div class="row" style="margin-top:10px"><button class="btn btn-small" id="bm" type="button">${state.bookmarked ? '★ ブックマーク済み' : '☆ ブックマーク'}</button>
       <a class="btn btn-small btn-ghost" href="${esc(q.source.url)}" target="_blank" rel="noopener">原文 PDF</a></div>`;
   res.querySelector('#bm').onclick = async (e) => { const on = await store.toggleBookmark(q.id); e.target.textContent = on ? '★ ブックマーク済み' : '☆ ブックマーク'; toast(on ? 'ブックマークしました' : '解除しました'); };
   root.querySelector('#next-bar').classList.remove('hidden');
   res.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function relatedTopicLink(q) {
+  const t = content.topics.find((x) => x.sub === q.tags.sub);
+  return t ? `<div class="muted" style="margin-top:8px">教科書: <a href="#textbook/${t.id}">${esc(t.title)}</a>${content.topics.filter((x) => x.sub === q.tags.sub).length > 1 ? ` ほか（${esc(content.subName(q.tags.sub))}）` : ''}</div>` : '';
 }
 
 function next() {
