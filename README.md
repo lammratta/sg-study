@@ -4,7 +4,7 @@ iPhone だけで SG の学習（教科書・過去問演習・学習履歴）を
 
 ## 現在の状態
 
-Phase 1（MVP）まで完了（2026-10-27）。iPhone のホーム画面から科目A ドリルを回せます。受験日は 2026-11-29。
+Phase 2 まで完了（2026-10-27）。科目A ドリル・科目B ケース演習・教科書 36 ページ・進捗（合格目安）が使えます。受験日は 2026-11-29。
 
 - リポジトリ: https://github.com/lammratta/sg-study （公開）
 - 配信 URL: https://lammratta.github.io/sg-study/ （`main` に push すると自動更新）
@@ -45,5 +45,5 @@ npm run dev     # http://localhost:8080
 
 ## 次のステップ
 
-- Phase 2: 教科書（重点分野）、進捗の強化、科目B の充実
-- Phase 3: 模擬試験（48 + 12 問・120 分）
+- Phase 3: 模擬試験（48 + 12 問・120 分）、弱点優先の強化、実績バッジ
+- 教科書の内容で気付いた誤りは content-src/textbook/*.md を直して `npm run build` → push
