@@ -4,7 +4,7 @@ iPhone だけで SG の学習（教科書・過去問演習・学習履歴）を
 
 ## 現在の状態
 
-Phase 0（コンテンツ準備）を進行中（2026-10-26）。受験日は 2026-11-29。
+Phase 1（MVP）まで完了（2026-10-27）。iPhone のホーム画面から科目A ドリルを回せます。受験日は 2026-11-29。
 
 - リポジトリ: https://github.com/lammratta/sg-study （公開）
 - 配信 URL: https://lammratta.github.io/sg-study/ （`main` に push すると自動更新）
@@ -26,8 +26,24 @@ Phase 0（コンテンツ準備）を進行中（2026-10-26）。受験日は 20
 - 問題は IPA が公開している公式問題だけを使い、出典を明記する。解説と教科書は自作。
 - 現行の CBT 試験は 2026-12-27 開催分を最後に休止、2027 年度春頃から新制度（SG は継続）。どちらで受験しても使えるように、現行シラバスと新シラバス案の両方の分類に対応する。
 
+## 使い方
+
+1. iPhone の Safari で https://lammratta.github.io/sg-study/ を開く
+2. 共有ボタン →「ホーム画面に追加」
+3. ホーム画面のアイコンから起動（2 回目以降はオフラインでも動く）
+
+## 開発
+
+```bash
+npm install && python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+npm run build   # content-src/ を検証して public/content/ と sw.js を生成
+npm test
+npm run dev     # http://localhost:8080
+```
+
+`main` に push すると GitHub Actions が `public/` を配信する。
+
 ## 次のステップ
 
-1. 受験時期、ホスティング、リポジトリ名を決める（企画書 10 章）
-2. Phase 0: リポジトリと配信環境を作り、公開問題・サンプル問題 約 120 問を JSON 化する
-3. Phase 1: MVP を作って iPhone に入れる
+- Phase 2: 教科書（重点分野）、進捗の強化、科目B の充実
+- Phase 3: 模擬試験（48 + 12 問・120 分）
