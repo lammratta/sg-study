@@ -28,9 +28,13 @@ Phase 3 まで完了（2026-10-27）。科目A ドリル・科目B ケース演�
 
 ## 使い方
 
-1. iPhone の Safari で https://lammratta.github.io/sg-study/ を開く
+1. iPhone の Safari で https://lammratta.github.io/sg-study/ を開く（下の QR コードを iPhone のカメラで読み取ってもよい）
 2. 共有ボタン →「ホーム画面に追加」
 3. ホーム画面のアイコンから起動（2 回目以降はオフラインでも動く）
+
+<img src="docs/qr-sg-study.png" alt="アプリを開く QR コード" width="180">
+
+QR コードは `swift scripts/make-qr.swift https://lammratta.github.io/sg-study/ docs/qr-sg-study.png` で作り直せる（macOS）。カメラから開くと Safari のタブで開き、ホーム画面のアプリとは学習記録が別になる。ホーム画面に追加したあとは、アイコンから開く。
 
 ## 開発
 
