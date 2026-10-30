@@ -1,6 +1,6 @@
 {
-  "contentVersion": 5,
-  "version": "a48f14adba2b9800",
+  "contentVersion": 6,
+  "version": "8400b0a8c1d111d4",
   "files": [
     {
       "path": "content/figures/sample2022-b-53.webp",
@@ -8,7 +8,7 @@
     },
     {
       "path": "content/index.json",
-      "hash": "6de6f7abe0b14a20"
+      "hash": "c9b50f70466f093d"
     },
     {
       "path": "content/questions/2023r05.json",

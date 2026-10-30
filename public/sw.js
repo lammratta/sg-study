@@ -1,5 +1,5 @@
-// Service Worker（ビルド時に a48f14adba2b9800 を置換して public/sw.js に生成される）
-const VERSION = 'a48f14adba2b9800';
+// Service Worker（ビルド時に 8400b0a8c1d111d4 を置換して public/sw.js に生成される）
+const VERSION = '8400b0a8c1d111d4';
 const CACHE = `sg-study-${VERSION}`;
 const scopeUrl = (p) => new URL(p, self.registration.scope).href;
 
