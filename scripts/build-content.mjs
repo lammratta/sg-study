@@ -96,8 +96,53 @@ const topics = [];
 const tdir = path.join(SRC, 'textbook');
 const pageSpecs = fs.existsSync(path.join(tdir, 'pages.json')) ? readJson(path.join(tdir, 'pages.json')) : [];
 const specById = new Map(pageSpecs.map((p) => [p.id, p]));
-const qidsBySub = new Map();
-for (const i of index) { if (!i.sub) continue; if (!qidsBySub.has(i.sub)) qidsBySub.set(i.sub, []); qidsBySub.get(i.sub).push(i.id); }
+const pageOrder = new Map(pageSpecs.map((p, i) => [p.id, i]));
+
+// 問題 → 教科書ページの対応。確認テストには主ページ（page）に割り当てた問題だけを出す。
+// also は前提として読むページで、教科書の並び順で主ページより前でなければならない。
+const qmapPath = path.join(tdir, 'question-map.json');
+const qmap = fs.existsSync(qmapPath) ? readJson(qmapPath) : {};
+if (!fs.existsSync(qmapPath)) warnings.push('textbook/question-map.json がない（確認テストが空になる）');
+const indexById = new Map(index.map((i) => [i.id, i]));
+for (const [qid, m] of Object.entries(qmap)) {
+  if (!indexById.has(qid)) { errors.push(`question-map: 存在しない問題 ${qid}`); continue; }
+  if (!specById.has(m.page)) { errors.push(`question-map: ${qid} の page "${m.page}" が pages.json にない`); continue; }
+  const also = m.also || [];
+  for (const a of also) {
+    if (!specById.has(a)) errors.push(`question-map: ${qid} の also "${a}" が pages.json にない`);
+    else if (pageOrder.get(a) >= pageOrder.get(m.page)) errors.push(`question-map: ${qid} の also ${a} が主ページ ${m.page} より後ろ`);
+  }
+  const entry = indexById.get(qid);
+  entry.topic = m.page;
+  if (also.length) entry.topicAlso = also;
+}
+const unmapped = index.filter((i) => !i.topic).map((i) => i.id);
+if (unmapped.length) warnings.push(`question-map: 教科書ページに未割当ての問題 ${unmapped.length} 問（${unmapped.slice(0, 5).join(', ')}${unmapped.length > 5 ? ' ほか' : ''}）`);
+
+// 4 つの固定見出しごとに <section> で包み、画面側で見た目を変えられるようにする
+const SECTION_CLASS = { 要点: 'tb-point', 解説: 'tb-body', 試験での問われ方: 'tb-exam', 用語集: 'tb-glossary' };
+function glossaryHtml(md) {
+  const items = [];
+  const rest = [];
+  for (const line of md.split(/\r?\n/)) {
+    const g = line.match(/^- \*\*(.+?)\*\*[:：]\s*(.*)$/);
+    if (g) items.push(`<div class="g-item"><dt>${marked.parseInline(g[1])}</dt><dd>${marked.parseInline(g[2])}</dd></div>`);
+    else if (line.trim()) rest.push(line);
+  }
+  return (items.length ? `<dl class="glossary">${items.join('')}</dl>` : '') + (rest.length ? marked.parse(rest.join('\n')) : '');
+}
+function topicHtml(body) {
+  const parts = body.split(/^## (.+)$/m);
+  let html = parts[0].trim() ? marked.parse(parts[0]) : '';
+  for (let i = 1; i < parts.length; i += 2) {
+    const title = parts[i].trim();
+    const cls = SECTION_CLASS[title] || 'tb-other';
+    const inner = cls === 'tb-glossary' ? glossaryHtml(parts[i + 1] || '') : marked.parse(parts[i + 1] || '');
+    html += `<section class="tb-sec ${cls}"><h2>${escapeHtml(title)}</h2>${inner}</section>`;
+  }
+  return html;
+}
+
 if (fs.existsSync(tdir)) {
   for (const f of fs.readdirSync(tdir).filter((f) => f.endsWith('.md') && f !== 'README.md').sort()) {
     const raw = fs.readFileSync(path.join(tdir, f), 'utf8');
@@ -110,13 +155,21 @@ if (fs.existsSync(tdir)) {
     const sub = meta.sub || spec?.sub;
     if (!sub || !subIndex.has(sub)) errors.push(`textbook/${f}: sub "${sub}" がシラバスにない`);
     const body = m[2];
-    for (const h of ['## 要点', '## 解説', '## 試験での問われ方', '## 用語集']) if (!body.includes(h)) warnings.push(`textbook/${f}: 見出し「${h}」がない`);
-    const terms = [...body.matchAll(/^- \*\*(.+?)\*\*[:：]/gm)].map((x) => x[1].trim());
-    const summary = (body.split('## 解説')[0].match(/^- (.+)$/gm) || []).map((l) => l.slice(2).trim());
-    topics.push({ id, title: meta.title || spec?.title || id, sub, order: Number(meta.order || spec?.order || 0), summary, html: marked.parse(body), terms, readingMinutes: Number(meta.readingMinutes || 6), updatedAt: meta.updatedAt || '', relatedQuestionIds: qidsBySub.get(sub) || [] });
+    const lines = body.split(/\r?\n/);
+    for (const h of ['## 要点', '## 解説', '## 試験での問われ方', '## 用語集']) if (!lines.includes(h)) warnings.push(`textbook/${f}: 見出し「${h}」がない`);
+    // 用語は「## 用語集」の中の `- **用語**: 説明` だけから拾う（解説の箇条書きと混ざらないように）
+    const glossaryMd = body.split(/^## 用語集\s*$/m)[1] || '';
+    const terms = [...glossaryMd.matchAll(/^- \*\*(.+?)\*\*[:：]/gm)].map((x) => x[1].trim());
+    const summary = (body.split(/^## 解説\s*$/m)[0].match(/^- (.+)$/gm) || []).map((l) => l.slice(2).replace(/\*\*/g, '').trim());
+    const html = topicHtml(body);
+    if (/\*\*/.test(html.replace(/<code>[\s\S]*?<\/code>/g, ''))) warnings.push(`textbook/${f}: 太字にならない ** がある（node scripts/check-textbook.mjs ${id} で場所を確認）`);
+    const byKind = (a, b) => (a.kind === b.kind ? 0 : a.kind === 'A' ? -1 : 1);
+    const related = index.filter((i) => i.topic === id).sort(byKind).map((i) => i.id);
+    const prereqFor = index.filter((i) => i.topicAlso?.includes(id)).map((i) => i.id);
+    topics.push({ id, title: meta.title || spec?.title || id, sub, order: Number(meta.order || spec?.order || 0), summary, html, terms, readingMinutes: Number(meta.readingMinutes || 6), updatedAt: meta.updatedAt || '', relatedQuestionIds: related, prereqForQuestionIds: prereqFor });
   }
 }
-topics.sort((a, b) => (a.sub === b.sub ? a.order - b.order : [...subIndex.keys()].indexOf(a.sub) - [...subIndex.keys()].indexOf(b.sub)));
+topics.sort((a, b) => (pageOrder.has(a.id) && pageOrder.has(b.id) ? pageOrder.get(a.id) - pageOrder.get(b.id) : a.sub === b.sub ? a.order - b.order : [...subIndex.keys()].indexOf(a.sub) - [...subIndex.keys()].indexOf(b.sub)));
 for (const p of pageSpecs) if (!topics.find((t) => t.id === p.id)) warnings.push(`textbook: 未執筆 ${p.id} ${p.title}`);
 
 // ---- 結果 -----------------------------------------------------------------
@@ -142,7 +195,7 @@ const write = (rel, obj) => {
 write('syllabus.json', syllabus);
 write('questions/index.json', index);
 for (const s of sets.values()) write(`questions/${s.setId}.json`, s);
-write('textbook/index.json', topics.map((t) => ({ id: t.id, title: t.title, sub: t.sub, order: t.order, terms: t.terms, readingMinutes: t.readingMinutes, questions: t.relatedQuestionIds.length })));
+write('textbook/index.json', topics.map((t) => ({ id: t.id, title: t.title, sub: t.sub, order: t.order, terms: t.terms, readingMinutes: t.readingMinutes, questions: t.relatedQuestionIds.length, questionIds: t.relatedQuestionIds })));
 for (const t of topics) write(`textbook/${t.id}.json`, t);
 const figDir = path.join(SRC, 'figures');
 if (fs.existsSync(figDir)) {

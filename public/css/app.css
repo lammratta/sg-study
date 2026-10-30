@@ -151,3 +151,39 @@ input[type="search"] { min-height: 44px; padding: 8px 12px; border-radius: 10px;
 .badge-card { text-align: center; padding: 10px 6px; border: 1px solid var(--line); border-radius: 12px; background: var(--card); }
 .badge-card .ic { font-size: 1.7rem; line-height: 1.2; } .badge-card .n { font-size: .8rem; font-weight: 600; margin-top: 4px; } .badge-card .d { font-size: .7rem; color: var(--muted); }
 .badge-card.locked { opacity: .45; filter: grayscale(1); }
+
+/* 下部バーのボタンは中央に置く（.btn は inline-flex のため margin auto が効かない） */
+.bottom-bar > .btn { display: flex; }
+
+/* 教科書の読みやすさ */
+:root { --marker: #ffe98f; --point-bg: #eef3ff; --exam-bg: #fff5e6; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --marker: rgba(255, 200, 60, .30); --point-bg: #1b2538; --exam-bg: #2e2416; } }
+:root[data-theme="dark"] { --marker: rgba(255, 200, 60, .30); --point-bg: #1b2538; --exam-bg: #2e2416; }
+.topic { line-height: 1.85; }
+.topic p { margin: 0 0 1em; }
+.topic li { margin: .35em 0; }
+.topic strong { font-weight: 700; }
+.topic .tb-body strong, .topic .tb-exam strong { background: linear-gradient(transparent 58%, var(--marker) 58%); padding: 0 .1em; }
+.topic h3 { font-size: 1.04rem; margin: 28px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--line); scroll-margin-top: 12px; }
+.topic table tr:nth-child(even) td { background: rgba(127, 127, 127, .07); }
+.tb-sec { margin: 20px 0; }
+.tb-point, .tb-exam { border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px 6px; }
+.tb-point { background: var(--point-bg); }
+.tb-exam { background: var(--exam-bg); }
+.tb-point > h2, .tb-exam > h2 { margin-top: 0; }
+.tb-exam > h2 { border-left-color: var(--warn); }
+.tb-point ul, .tb-exam ul { list-style: none; padding-left: 0; }
+.tb-point li, .tb-exam li { position: relative; padding-left: 1.5em; margin: .6em 0; }
+.tb-point li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+.tb-exam li::before { content: "▸"; position: absolute; left: .15em; color: var(--warn); font-weight: 700; }
+.glossary { margin: 0; }
+.glossary .g-item { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.glossary .g-item:last-child { border-bottom: 0; }
+.glossary dt { font-weight: 700; color: var(--accent); }
+.glossary dd { margin: 2px 0 0; font-size: .95rem; }
+.toc { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 10px 12px; margin: 16px 0; }
+.toc-title { font-weight: 700; font-size: .9rem; color: var(--muted); margin-bottom: 4px; }
+.toc button { display: block; width: 100%; text-align: left; background: none; border: 0; border-top: 1px solid var(--line); padding: 9px 4px; color: var(--accent); font-size: .95rem; cursor: pointer; }
+.toc button:first-of-type { border-top: 0; }
+.rating .btn { padding: 8px 4px; white-space: nowrap; }
+.topic th:first-child, .topic td:first-child { min-width: 4.6em; }

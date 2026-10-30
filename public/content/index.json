@@ -1,7 +1,7 @@
 {
-  "contentVersion": 4,
-  "hash": "5c04de3e2a835c38",
-  "builtAt": "2026-10-27T04:56:28.546Z",
+  "contentVersion": 5,
+  "hash": "065cdf4fc4fec206",
+  "builtAt": "2026-10-30T03:47:01.534Z",
   "counts": {
     "questionsA": 96,
     "questionsB": 26,
@@ -15,8 +15,8 @@
       "bytes": 8355
     },
     "questions/index.json": {
-      "hash": "2af9ddee712eba26",
-      "bytes": 19857
+      "hash": "1f379629fd4e0d07",
+      "bytes": 22374
     },
     "questions/2023r05.json": {
       "hash": "1e0d3c43eaddad7b",
@@ -31,8 +31,8 @@
       "bytes": 57111
     },
     "questions/2026r08.json": {
-      "hash": "11097cb23c5df9c8",
-      "bytes": 57806
+      "hash": "54ad4d149b0311d0",
+      "bytes": 57780
     },
     "questions/sample2022.json": {
       "hash": "ad76dd82c5facd4a",
@@ -43,152 +43,152 @@
       "bytes": 15124
     },
     "textbook/index.json": {
-      "hash": "27a459bcdd834678",
-      "bytes": 30487
+      "hash": "ca8174bc72132e24",
+      "bytes": 35230
     },
     "textbook/A1-1-01.json": {
-      "hash": "54d555fee5389278",
-      "bytes": 13394
+      "hash": "13e8b594c7a6ff0e",
+      "bytes": 15518
     },
     "textbook/A1-1-02.json": {
-      "hash": "eec99b7b88139a7b",
-      "bytes": 14964
+      "hash": "2f3568eb08857e0b",
+      "bytes": 21999
     },
     "textbook/A1-1-03.json": {
-      "hash": "d22cf1621eae0be9",
-      "bytes": 14222
+      "hash": "f37830edf6d9a1a3",
+      "bytes": 17435
     },
     "textbook/A1-1-04.json": {
-      "hash": "5eba69edf3dbfac1",
-      "bytes": 16242
+      "hash": "199f94f824c7f72b",
+      "bytes": 26555
     },
     "textbook/A1-1-05.json": {
-      "hash": "e6d6391bfd5ff172",
-      "bytes": 15146
+      "hash": "72c65c1a4d2c9694",
+      "bytes": 24045
     },
     "textbook/A1-1-06.json": {
-      "hash": "6fe6320297520512",
-      "bytes": 14281
+      "hash": "8d6fe5174c12dd78",
+      "bytes": 19647
     },
     "textbook/A1-1-07.json": {
-      "hash": "fc9bd5e01074639e",
-      "bytes": 15768
+      "hash": "5db423f78af4a6d0",
+      "bytes": 17903
     },
     "textbook/A1-2-01.json": {
-      "hash": "1aabd874443cb6d6",
-      "bytes": 15375
+      "hash": "11d1bb82df8c6827",
+      "bytes": 22910
     },
     "textbook/A1-2-02.json": {
-      "hash": "14451d3bdd5b3546",
-      "bytes": 14879
+      "hash": "2708955effc08909",
+      "bytes": 20503
     },
     "textbook/A1-2-03.json": {
-      "hash": "7c950efba0abdda4",
-      "bytes": 16497
+      "hash": "edf2b86463531ed8",
+      "bytes": 24755
     },
     "textbook/A1-2-04.json": {
-      "hash": "cf8ec56294f99d39",
-      "bytes": 15396
+      "hash": "a47647ed4b0c6e8b",
+      "bytes": 23776
     },
     "textbook/A1-2-05.json": {
-      "hash": "3924a3efb1ca29fc",
-      "bytes": 15447
+      "hash": "03bf8659ed5332b4",
+      "bytes": 19263
     },
     "textbook/A1-3-01.json": {
-      "hash": "b76541d009f4526f",
-      "bytes": 13948
+      "hash": "d94de960b19bf0db",
+      "bytes": 19762
     },
     "textbook/A1-4-01.json": {
-      "hash": "cf9f326aa8b8b8bb",
-      "bytes": 15454
+      "hash": "50ad514c911e291d",
+      "bytes": 20017
     },
     "textbook/A1-4-02.json": {
-      "hash": "f8879017fcf02561",
-      "bytes": 14077
+      "hash": "e505147c16facba0",
+      "bytes": 19839
     },
     "textbook/A1-4-03.json": {
-      "hash": "5634c737c0ad165c",
-      "bytes": 15566
+      "hash": "10c73b070b294b42",
+      "bytes": 24734
     },
     "textbook/A1-4-04.json": {
-      "hash": "e1e0a55eb4ef694e",
-      "bytes": 14758
+      "hash": "5caab2d2854e74b1",
+      "bytes": 22198
     },
     "textbook/A1-4-05.json": {
-      "hash": "6ca6122913ec489b",
-      "bytes": 14128
+      "hash": "5549cf8d7de74dda",
+      "bytes": 19831
     },
     "textbook/A1-5-01.json": {
-      "hash": "92d4d9612decabc1",
-      "bytes": 13289
+      "hash": "3129d44d8191e8a2",
+      "bytes": 19042
     },
     "textbook/A1-5-02.json": {
-      "hash": "d1c62d1b4ebfc4da",
-      "bytes": 13913
+      "hash": "deb5faf9f1227a98",
+      "bytes": 19083
     },
     "textbook/A1-5-03.json": {
-      "hash": "811061f19eb4ba98",
-      "bytes": 15285
+      "hash": "917158e02dcef649",
+      "bytes": 18824
     },
     "textbook/A2-1-01.json": {
-      "hash": "e91e3dbdb5d53a5b",
-      "bytes": 16724
+      "hash": "3850d56d7356a54b",
+      "bytes": 21400
     },
     "textbook/A2-2-01.json": {
-      "hash": "7e4c99902b083c89",
-      "bytes": 18688
+      "hash": "f316525375cc144e",
+      "bytes": 25759
     },
     "textbook/A2-2-02.json": {
-      "hash": "4f8de812fcf59efa",
-      "bytes": 18797
+      "hash": "dc802bd635c5a9a2",
+      "bytes": 27412
     },
     "textbook/A2-3-01.json": {
-      "hash": "2b7296d79cfad364",
-      "bytes": 16248
+      "hash": "bec8f7a382f3ba02",
+      "bytes": 19055
     },
     "textbook/A2-4-01.json": {
-      "hash": "9e7106f29f89560f",
-      "bytes": 17120
+      "hash": "7c8ea77cbc62977d",
+      "bytes": 20172
     },
     "textbook/A2-5-01.json": {
-      "hash": "f670b218e4ce4f9e",
-      "bytes": 15717
+      "hash": "db817c5718d03d7e",
+      "bytes": 18581
     },
     "textbook/A3-01.json": {
-      "hash": "105d88bc696711cd",
-      "bytes": 14267
+      "hash": "6173ccecf7a5cef6",
+      "bytes": 23647
     },
     "textbook/A4-01.json": {
-      "hash": "9e418722df9f4dfa",
-      "bytes": 14487
+      "hash": "a2e3a7180dd0d45a",
+      "bytes": 21629
     },
     "textbook/A5-01.json": {
-      "hash": "6878e8dd8c6f7984",
-      "bytes": 15028
+      "hash": "68a1db12a474bf7e",
+      "bytes": 23963
     },
     "textbook/A6-01.json": {
-      "hash": "f2b6ce71d7d406c2",
-      "bytes": 13409
+      "hash": "dc1f90e217f4df65",
+      "bytes": 20038
     },
     "textbook/A7-01.json": {
-      "hash": "e269855d97069fd0",
-      "bytes": 14599
+      "hash": "c7309acede0db951",
+      "bytes": 21515
     },
     "textbook/A8-01.json": {
-      "hash": "bef76abb5e166657",
-      "bytes": 13814
+      "hash": "8b3d5a351fec2ee4",
+      "bytes": 24494
     },
     "textbook/A9-01.json": {
-      "hash": "39b6a5b8674497dd",
-      "bytes": 13981
+      "hash": "5c37930a84a3da1c",
+      "bytes": 20869
     },
     "textbook/A10-01.json": {
-      "hash": "bfca8c533a1796eb",
-      "bytes": 14260
+      "hash": "08c73326f1abc8e3",
+      "bytes": 16950
     },
     "textbook/A11-01.json": {
-      "hash": "217577fb24eb5d1c",
-      "bytes": 14627
+      "hash": "ec10f19e5c08a2bd",
+      "bytes": 25867
     },
     "figures/sample2022-b-53.webp": {
       "hash": "041b4d63755a7923",

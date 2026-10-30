@@ -43,6 +43,8 @@ npm run dev     # http://localhost:8080
 
 `main` に push すると GitHub Actions が `public/` を配信する。
 
+教科書の各ページ末尾の「確認テスト」には、`content-src/textbook/question-map.json` でそのページに割り当てた公式問題だけが出る。割当ての基準と書き方のルールは `content-src/textbook/README.md` にある。ページを直したら `node scripts/check-textbook.mjs <ページid>` で太字の崩れや用語集の形式を確認する。
+
 ## 次のステップ
 
 - 仕上げ: 新機能は作らず、演習・弱点潰し・模試 3 回。解説の修正だけ行う

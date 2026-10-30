@@ -1,6 +1,6 @@
 {
-  "contentVersion": 4,
-  "version": "52136034fdbafef6",
+  "contentVersion": 5,
+  "version": "97098f3c73efe868",
   "files": [
     {
       "path": "content/figures/sample2022-b-53.webp",
@@ -8,7 +8,7 @@
     },
     {
       "path": "content/index.json",
-      "hash": "f29d7abded32d694"
+      "hash": "df017fd3379334b7"
     },
     {
       "path": "content/questions/2023r05.json",
@@ -24,11 +24,11 @@
     },
     {
       "path": "content/questions/2026r08.json",
-      "hash": "11097cb23c5df9c8"
+      "hash": "54ad4d149b0311d0"
     },
     {
       "path": "content/questions/index.json",
-      "hash": "2af9ddee712eba26"
+      "hash": "1f379629fd4e0d07"
     },
     {
       "path": "content/questions/sample2022.json",
@@ -44,155 +44,155 @@
     },
     {
       "path": "content/textbook/A1-1-01.json",
-      "hash": "54d555fee5389278"
+      "hash": "13e8b594c7a6ff0e"
     },
     {
       "path": "content/textbook/A1-1-02.json",
-      "hash": "eec99b7b88139a7b"
+      "hash": "2f3568eb08857e0b"
     },
     {
       "path": "content/textbook/A1-1-03.json",
-      "hash": "d22cf1621eae0be9"
+      "hash": "f37830edf6d9a1a3"
     },
     {
       "path": "content/textbook/A1-1-04.json",
-      "hash": "5eba69edf3dbfac1"
+      "hash": "199f94f824c7f72b"
     },
     {
       "path": "content/textbook/A1-1-05.json",
-      "hash": "e6d6391bfd5ff172"
+      "hash": "72c65c1a4d2c9694"
     },
     {
       "path": "content/textbook/A1-1-06.json",
-      "hash": "6fe6320297520512"
+      "hash": "8d6fe5174c12dd78"
     },
     {
       "path": "content/textbook/A1-1-07.json",
-      "hash": "fc9bd5e01074639e"
+      "hash": "5db423f78af4a6d0"
     },
     {
       "path": "content/textbook/A1-2-01.json",
-      "hash": "1aabd874443cb6d6"
+      "hash": "11d1bb82df8c6827"
     },
     {
       "path": "content/textbook/A1-2-02.json",
-      "hash": "14451d3bdd5b3546"
+      "hash": "2708955effc08909"
     },
     {
       "path": "content/textbook/A1-2-03.json",
-      "hash": "7c950efba0abdda4"
+      "hash": "edf2b86463531ed8"
     },
     {
       "path": "content/textbook/A1-2-04.json",
-      "hash": "cf8ec56294f99d39"
+      "hash": "a47647ed4b0c6e8b"
     },
     {
       "path": "content/textbook/A1-2-05.json",
-      "hash": "3924a3efb1ca29fc"
+      "hash": "03bf8659ed5332b4"
     },
     {
       "path": "content/textbook/A1-3-01.json",
-      "hash": "b76541d009f4526f"
+      "hash": "d94de960b19bf0db"
     },
     {
       "path": "content/textbook/A1-4-01.json",
-      "hash": "cf9f326aa8b8b8bb"
+      "hash": "50ad514c911e291d"
     },
     {
       "path": "content/textbook/A1-4-02.json",
-      "hash": "f8879017fcf02561"
+      "hash": "e505147c16facba0"
     },
     {
       "path": "content/textbook/A1-4-03.json",
-      "hash": "5634c737c0ad165c"
+      "hash": "10c73b070b294b42"
     },
     {
       "path": "content/textbook/A1-4-04.json",
-      "hash": "e1e0a55eb4ef694e"
+      "hash": "5caab2d2854e74b1"
     },
     {
       "path": "content/textbook/A1-4-05.json",
-      "hash": "6ca6122913ec489b"
+      "hash": "5549cf8d7de74dda"
     },
     {
       "path": "content/textbook/A1-5-01.json",
-      "hash": "92d4d9612decabc1"
+      "hash": "3129d44d8191e8a2"
     },
     {
       "path": "content/textbook/A1-5-02.json",
-      "hash": "d1c62d1b4ebfc4da"
+      "hash": "deb5faf9f1227a98"
     },
     {
       "path": "content/textbook/A1-5-03.json",
-      "hash": "811061f19eb4ba98"
+      "hash": "917158e02dcef649"
     },
     {
       "path": "content/textbook/A10-01.json",
-      "hash": "bfca8c533a1796eb"
+      "hash": "08c73326f1abc8e3"
     },
     {
       "path": "content/textbook/A11-01.json",
-      "hash": "217577fb24eb5d1c"
+      "hash": "ec10f19e5c08a2bd"
     },
     {
       "path": "content/textbook/A2-1-01.json",
-      "hash": "e91e3dbdb5d53a5b"
+      "hash": "3850d56d7356a54b"
     },
     {
       "path": "content/textbook/A2-2-01.json",
-      "hash": "7e4c99902b083c89"
+      "hash": "f316525375cc144e"
     },
     {
       "path": "content/textbook/A2-2-02.json",
-      "hash": "4f8de812fcf59efa"
+      "hash": "dc802bd635c5a9a2"
     },
     {
       "path": "content/textbook/A2-3-01.json",
-      "hash": "2b7296d79cfad364"
+      "hash": "bec8f7a382f3ba02"
     },
     {
       "path": "content/textbook/A2-4-01.json",
-      "hash": "9e7106f29f89560f"
+      "hash": "7c8ea77cbc62977d"
     },
     {
       "path": "content/textbook/A2-5-01.json",
-      "hash": "f670b218e4ce4f9e"
+      "hash": "db817c5718d03d7e"
     },
     {
       "path": "content/textbook/A3-01.json",
-      "hash": "105d88bc696711cd"
+      "hash": "6173ccecf7a5cef6"
     },
     {
       "path": "content/textbook/A4-01.json",
-      "hash": "9e418722df9f4dfa"
+      "hash": "a2e3a7180dd0d45a"
     },
     {
       "path": "content/textbook/A5-01.json",
-      "hash": "6878e8dd8c6f7984"
+      "hash": "68a1db12a474bf7e"
     },
     {
       "path": "content/textbook/A6-01.json",
-      "hash": "f2b6ce71d7d406c2"
+      "hash": "dc1f90e217f4df65"
     },
     {
       "path": "content/textbook/A7-01.json",
-      "hash": "e269855d97069fd0"
+      "hash": "c7309acede0db951"
     },
     {
       "path": "content/textbook/A8-01.json",
-      "hash": "bef76abb5e166657"
+      "hash": "8b3d5a351fec2ee4"
     },
     {
       "path": "content/textbook/A9-01.json",
-      "hash": "39b6a5b8674497dd"
+      "hash": "5c37930a84a3da1c"
     },
     {
       "path": "content/textbook/index.json",
-      "hash": "27a459bcdd834678"
+      "hash": "ca8174bc72132e24"
     },
     {
       "path": "css/app.css",
-      "hash": "243c136f514788c3"
+      "hash": "2ac83a78f9067cf2"
     },
     {
       "path": "icons/apple-touch-icon-180.png",
@@ -224,7 +224,7 @@
     },
     {
       "path": "js/content.js",
-      "hash": "e233394b30eea9c7"
+      "hash": "4c64d81bd88ecff8"
     },
     {
       "path": "js/core/badges.js",
@@ -252,7 +252,7 @@
     },
     {
       "path": "js/screens/exam.js",
-      "hash": "5053530e3859e235"
+      "hash": "8a1263a3751e8fba"
     },
     {
       "path": "js/screens/home.js",
@@ -264,7 +264,7 @@
     },
     {
       "path": "js/screens/quiz.js",
-      "hash": "bf1ab96bb0c6fab9"
+      "hash": "cca760ac1e9da4c4"
     },
     {
       "path": "js/screens/settings.js",
@@ -272,7 +272,7 @@
     },
     {
       "path": "js/screens/textbook.js",
-      "hash": "b1dfe5baee1ac682"
+      "hash": "e4a75a94c8e02854"
     },
     {
       "path": "js/store.js",
@@ -285,6 +285,10 @@
     {
       "path": "js/ui/components.js",
       "hash": "887b82686b1836de"
+    },
+    {
+      "path": "js/ui/links.js",
+      "hash": "7169265212a44425"
     },
     {
       "path": "manifest.webmanifest",

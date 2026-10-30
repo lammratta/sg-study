@@ -5,6 +5,7 @@ import { composeExam, scoreExam, fmtClock, EXAM_SPEC, GROUP_NAMES } from '../cor
 import { checkBadges } from '../badges.js';
 import { esc, toast, pct, fmtMin } from '../ui/components.js';
 import { bar, lineChart } from '../ui/charts.js';
+import { textbookLinks } from '../ui/links.js';
 
 let exam = null;        // 進行中の模試（メモリ上の正）
 let timer = null;       // setInterval
@@ -249,7 +250,6 @@ async function renderReview(root, params) {
   const correct = !!chosen && q.answer.includes(chosen);
   const st = store.states.get(qid);
   const figs = (pos) => (q.figures || []).filter((f) => f.position === pos).map((f) => `<div class="figure"><img src="${content.figureUrl(f.src)}" alt="${esc(f.alt)}" loading="lazy"></div>`).join('');
-  const topic = content.topics.find((x) => x.sub === q.tags.sub);
   root.innerHTML = `
     <div class="topbar"><a class="back" href="#exam/result?id=${e.id}" aria-label="結果へ">‹</a><div class="title">見直し 問 ${i + 1} / ${e.qids.length}</div></div>
     <div class="q-head"><span>${esc(GROUP_NAMES[e.groups[qid]] || '')} ・ ${esc(content.subName(q.tags.sub))}</span><span class="${correct ? 'verdict ok' : 'verdict ng'}" style="font-size:.95rem">${correct ? '正解' : chosen ? '不正解' : '未回答'}</span></div>
@@ -259,7 +259,7 @@ async function renderReview(root, params) {
     <div class="result">
       <div class="verdict ${correct ? 'ok' : 'ng'}">正解: ${q.answer.join('，')}${chosen ? ` ・ あなたの回答: ${chosen}` : ''}</div>
       <div class="explanation">${q.explanationHtml || '<p class="muted">解説は準備中です。</p>'}</div>
-      ${topic ? `<div class="muted" style="margin-top:8px">教科書: <a href="#textbook/${topic.id}">${esc(topic.title)}</a></div>` : ''}
+      ${textbookLinks(qid)}
       <div class="citation">出典: ${esc(q.source.citation)}${q.source.modified ? `（原文の一部を変更: ${esc(q.source.modifiedNote)}）` : ''}</div>
       <div class="row" style="margin-top:10px"><button class="btn btn-small" id="bm" type="button">${st?.bookmarked ? '★ ブックマーク済み' : '☆ ブックマーク'}</button>
         <a class="btn btn-small btn-ghost" href="${esc(q.source.url)}" target="_blank" rel="noopener">原文 PDF</a></div>

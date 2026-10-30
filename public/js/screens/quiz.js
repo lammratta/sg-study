@@ -6,6 +6,7 @@ import { dueQuestions } from '../core/srs.js';
 import { subStats, endOfDay } from '../core/stats.js';
 import { esc, toast, topbar, pct, fmtMin } from '../ui/components.js';
 import { checkBadges } from '../badges.js';
+import { textbookLinks } from '../ui/links.js';
 
 const SESSION_KEY = 'sg-study.session';
 let session = null;
@@ -168,18 +169,13 @@ async function answer(root, q, key) {
   res.innerHTML = `
     <div class="verdict ${correct ? 'ok' : 'ng'}">${correct ? '正解' : '不正解'}（正解: ${q.answer.join('，')}）${state.streak >= 2 && correct ? ` <span class="badge">${state.streak} 連続</span>` : ''}</div>
     <div class="explanation">${q.explanationHtml || '<p class="muted">解説は準備中です。</p>'}</div>
-    ${relatedTopicLink(q)}
+    ${textbookLinks(q.id)}
     <div class="citation">出典: ${esc(q.source.citation)}${q.source.modified ? `（原文の一部を変更: ${esc(q.source.modifiedNote)}）` : ''}</div>
     <div class="row" style="margin-top:10px"><button class="btn btn-small" id="bm" type="button">${state.bookmarked ? '★ ブックマーク済み' : '☆ ブックマーク'}</button>
       <a class="btn btn-small btn-ghost" href="${esc(q.source.url)}" target="_blank" rel="noopener">原文 PDF</a></div>`;
   res.querySelector('#bm').onclick = async (e) => { const on = await store.toggleBookmark(q.id); e.target.textContent = on ? '★ ブックマーク済み' : '☆ ブックマーク'; toast(on ? 'ブックマークしました' : '解除しました'); };
   root.querySelector('#next-bar').classList.remove('hidden');
   res.scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-
-function relatedTopicLink(q) {
-  const t = content.topics.find((x) => x.sub === q.tags.sub);
-  return t ? `<div class="muted" style="margin-top:8px">教科書: <a href="#textbook/${t.id}">${esc(t.title)}</a>${content.topics.filter((x) => x.sub === q.tags.sub).length > 1 ? ` ほか（${esc(content.subName(q.tags.sub))}）` : ''}</div>` : '';
 }
 
 function next() {
