@@ -25,7 +25,7 @@ export async function render(root) {
     </div>
     <h2>コンテンツ</h2>
     <div class="card">
-      <div>問題 ${content.index.counts.questionsA + content.index.counts.questionsB} 問（科目A ${content.index.counts.questionsA} ・ 科目B ${content.index.counts.questionsB}）・ コンテンツ版 v${content.index.contentVersion}</div>
+      <div>公式問題 ${content.index.counts.questionsA + content.index.counts.questionsB} 問（科目A ${content.index.counts.questionsA} ・ 科目B ${content.index.counts.questionsB}）${content.index.counts.original ? ` ・ オリジナル問題 ${content.index.counts.original} 問` : ''} ・ コンテンツ版 v${content.index.contentVersion}</div>
       <div class="muted">${persisted === true ? '永続ストレージ: 許可済み' : persisted === false ? '永続ストレージ: 未許可（ホーム画面に追加すると許可されやすくなります）' : ''}${usage ? ` ・ 使用量 ${(usage / 1024 / 1024).toFixed(1)} MB` : ''}</div>
       <button class="btn btn-small" id="reload" type="button" style="margin-top:8px">更新を確認</button>
     </div>
@@ -36,7 +36,7 @@ export async function render(root) {
     </div>
     <h2>出典・ライセンス</h2>
     <div class="card muted" style="font-size:.85rem">
-      問題は独立行政法人情報処理推進機構（IPA）が公開している情報セキュリティマネジメント試験の公開問題・サンプル問題を、出典を明記して使用しています（IPA は著作権を放棄していません。教育目的の利用）。解説と教科書は本アプリの自作で、IPA の見解ではありません。個人の学習用です。
+      問題は独立行政法人情報処理推進機構（IPA）が公開している情報セキュリティマネジメント試験の公開問題・サンプル問題を、出典を明記して使用しています（IPA は著作権を放棄していません。教育目的の利用）。解説と教科書は本アプリの自作で、IPA の見解ではありません。教科書の確認テストの一部には、教科書の内容から本アプリで作ったオリジナル問題があり、「オリジナル」と表示します。個人の学習用です。
     </div>`;
   const save = (patch) => { settings.set(patch); };
   root.querySelector('#examDate').onchange = (e) => save({ examDate: e.target.value });

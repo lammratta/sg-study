@@ -11,7 +11,8 @@ async function fetchJson(rel, opts = {}) {
 export const content = {
   index: null,      // content/index.json
   syllabus: null,
-  questions: [],    // questions/index.json（軽量な一覧）
+  questions: [],    // 公式問題の一覧（演習・模試・集計に使う）
+  allQuestions: [], // questions/index.json 全体（オリジナル問題を含む）
   topics: [],       // textbook/index.json
   byId: new Map(),  // id -> 一覧エントリ
   topicById: new Map(), // 教科書ページ id -> 目次エントリ
@@ -20,8 +21,10 @@ export const content = {
 
   async load() {
     this.index = await fetchJson('index.json', { cache: 'no-cache' }).catch(() => fetchJson('index.json'));
-    [this.syllabus, this.questions, this.topics] = await Promise.all([fetchJson('syllabus.json'), fetchJson('questions/index.json'), fetchJson('textbook/index.json').catch(() => [])]);
-    this.byId = new Map(this.questions.map((q) => [q.id, q]));
+    [this.syllabus, this.allQuestions, this.topics] = await Promise.all([fetchJson('syllabus.json'), fetchJson('questions/index.json'), fetchJson('textbook/index.json').catch(() => [])]);
+    // オリジナル問題は教科書の確認テスト専用。byId には含めて、出題と解説の表示はできるようにする
+    this.questions = this.allQuestions.filter((q) => !q.original);
+    this.byId = new Map(this.allQuestions.map((q) => [q.id, q]));
     this.topicById = new Map(this.topics.map((t) => [t.id, t]));
     this.subs = new Map();
     for (const c of this.syllabus.categories) for (const s of c.subs) this.subs.set(s.id, { ...s, category: c.id, field: c.field, kind: c.kind, middle: c.middle, major: c.major });

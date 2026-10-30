@@ -187,3 +187,6 @@ input[type="search"] { min-height: 44px; padding: 8px 12px; border-radius: 10px;
 .toc button:first-of-type { border-top: 0; }
 .rating .btn { padding: 8px 4px; white-space: nowrap; }
 .topic th:first-child, .topic td:first-child { min-width: 4.6em; }
+.badge-orig { background: #efe7ff; color: #6a3fc8; font-weight: 600; }
+:root[data-theme="dark"] .badge-orig { background: #2d2346; color: #c4a8ff; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .badge-orig { background: #2d2346; color: #c4a8ff; } }

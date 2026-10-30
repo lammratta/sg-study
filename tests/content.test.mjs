@@ -21,7 +21,12 @@ for (const f of files) {
       assert.ok(q.answer.length > 0, `${q.id}: answer が空`);
       for (const a of q.answer) assert.ok(keys.has(a), `${q.id}: answer ${a} が選択肢にない`);
       if (q.kind === 'A') assert.equal(q.choices.length, 4, `${q.id}: 科目A の選択肢数`);
-      assert.ok(q.source.citation.startsWith('情報セキュリティマネジメント試験'), `${q.id}: 出典`);
+      if (q.source.original) {
+        assert.ok(q.source.citation.startsWith('オリジナル問題'), `${q.id}: オリジナル問題の出典表記`);
+        assert.equal(q.source.url, '', `${q.id}: オリジナル問題に原文 URL はない`);
+      } else {
+        assert.ok(q.source.citation.startsWith('情報セキュリティマネジメント試験'), `${q.id}: 出典`);
+      }
     }
   });
 }

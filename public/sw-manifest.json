@@ -1,6 +1,6 @@
 {
   "contentVersion": 5,
-  "version": "97098f3c73efe868",
+  "version": "a48f14adba2b9800",
   "files": [
     {
       "path": "content/figures/sample2022-b-53.webp",
@@ -8,7 +8,7 @@
     },
     {
       "path": "content/index.json",
-      "hash": "df017fd3379334b7"
+      "hash": "6de6f7abe0b14a20"
     },
     {
       "path": "content/questions/2023r05.json",
@@ -28,7 +28,11 @@
     },
     {
       "path": "content/questions/index.json",
-      "hash": "1f379629fd4e0d07"
+      "hash": "abcb9e58082af5d9"
+    },
+    {
+      "path": "content/questions/original.json",
+      "hash": "cd7c13ebee3e940a"
     },
     {
       "path": "content/questions/sample2022.json",
@@ -44,7 +48,7 @@
     },
     {
       "path": "content/textbook/A1-1-01.json",
-      "hash": "13e8b594c7a6ff0e"
+      "hash": "9228ac5c40b0f104"
     },
     {
       "path": "content/textbook/A1-1-02.json",
@@ -68,7 +72,7 @@
     },
     {
       "path": "content/textbook/A1-1-07.json",
-      "hash": "5db423f78af4a6d0"
+      "hash": "08e90dc97b5a572a"
     },
     {
       "path": "content/textbook/A1-2-01.json",
@@ -128,7 +132,7 @@
     },
     {
       "path": "content/textbook/A10-01.json",
-      "hash": "08c73326f1abc8e3"
+      "hash": "fe3d1c5e866a5dc5"
     },
     {
       "path": "content/textbook/A11-01.json",
@@ -148,15 +152,15 @@
     },
     {
       "path": "content/textbook/A2-3-01.json",
-      "hash": "bec8f7a382f3ba02"
+      "hash": "bd2d263982f18d1d"
     },
     {
       "path": "content/textbook/A2-4-01.json",
-      "hash": "7c8ea77cbc62977d"
+      "hash": "3dc6b247a0e77fae"
     },
     {
       "path": "content/textbook/A2-5-01.json",
-      "hash": "db817c5718d03d7e"
+      "hash": "a3f5c7e927b82a5f"
     },
     {
       "path": "content/textbook/A3-01.json",
@@ -188,11 +192,11 @@
     },
     {
       "path": "content/textbook/index.json",
-      "hash": "ca8174bc72132e24"
+      "hash": "140ce39e4a07b102"
     },
     {
       "path": "css/app.css",
-      "hash": "2ac83a78f9067cf2"
+      "hash": "29b7c9e9568c7fad"
     },
     {
       "path": "icons/apple-touch-icon-180.png",
@@ -224,7 +228,7 @@
     },
     {
       "path": "js/content.js",
-      "hash": "4c64d81bd88ecff8"
+      "hash": "3ed940a5e94c0114"
     },
     {
       "path": "js/core/badges.js",
@@ -264,15 +268,15 @@
     },
     {
       "path": "js/screens/quiz.js",
-      "hash": "cca760ac1e9da4c4"
+      "hash": "36787bf654e07d59"
     },
     {
       "path": "js/screens/settings.js",
-      "hash": "80fa1832f872ff31"
+      "hash": "f18591407ca6d6d1"
     },
     {
       "path": "js/screens/textbook.js",
-      "hash": "e4a75a94c8e02854"
+      "hash": "622ddb875a1f4bba"
     },
     {
       "path": "js/store.js",

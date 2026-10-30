@@ -86,7 +86,8 @@ for (const file of files) {
     const setId = q.source.setId;
     if (!sets.has(setId)) sets.set(setId, { setId, year: q.source.year, session: q.source.session, url: q.source.url, questions: [] });
     sets.get(setId).questions.push(out);
-    index.push({ id: out.id, kind: out.kind, setId, no: q.source.no, sub: out.tags.sub, skill: out.tags.skill, field: out.tags.field, difficulty: out.difficulty, outdated: out.flags.outdated, figure: out.figures.length > 0, reviewed: out.reviewed });
+    // オリジナル問題（教科書の内容から作成。IPA の問題ではない）は original: true。確認テスト専用で、演習・模試・集計には使わない
+    index.push({ id: out.id, kind: out.kind, setId, no: q.source.no, sub: out.tags.sub, skill: out.tags.skill, field: out.tags.field, difficulty: out.difficulty, outdated: out.flags.outdated, figure: out.figures.length > 0, reviewed: out.reviewed, ...(q.source?.original ? { original: true } : {}) });
   }
 }
 for (const s of sets.values()) s.questions.sort((a, b) => a.source.no - b.source.no);
@@ -174,7 +175,8 @@ for (const p of pageSpecs) if (!topics.find((t) => t.id === p.id)) warnings.push
 
 // ---- 結果 -----------------------------------------------------------------
 const total = index.length;
-console.log(`問題 ${total} 問（科目A ${index.filter((i) => i.kind === 'A').length} / 科目B ${index.filter((i) => i.kind === 'B').length}）、レビュー済み ${reviewed}、教科書 ${topics.length} ページ`);
+const official = index.filter((i) => !i.original);
+console.log(`問題 ${official.length} 問（科目A ${official.filter((i) => i.kind === 'A').length} / 科目B ${official.filter((i) => i.kind === 'B').length}）・ オリジナル ${total - official.length} 問、レビュー済み ${reviewed}、教科書 ${topics.length} ページ`);
 for (const w of warnings.slice(0, 15)) console.log('  warn:', w);
 if (warnings.length > 15) console.log(`  warn: …ほか ${warnings.length - 15} 件`);
 for (const e of errors) console.log('  ERROR:', e);
@@ -216,7 +218,7 @@ const indexJson = {
   contentVersion,
   hash: combined,
   builtAt: new Date().toISOString(),
-  counts: { questionsA: index.filter((i) => i.kind === 'A').length, questionsB: index.filter((i) => i.kind === 'B').length, reviewed, topics: topics.length, figures: Object.keys(written).filter((k) => k.startsWith('figures/')).length },
+  counts: { questionsA: official.filter((i) => i.kind === 'A').length, questionsB: official.filter((i) => i.kind === 'B').length, original: index.length - official.length, reviewed, topics: topics.length, figures: Object.keys(written).filter((k) => k.startsWith('figures/')).length },
   files: written,
 };
 fs.writeFileSync(path.join(OUT, 'index.json'), JSON.stringify(indexJson, null, 2));

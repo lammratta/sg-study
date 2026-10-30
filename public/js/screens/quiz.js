@@ -133,7 +133,7 @@ async function renderRun(root, params) {
   const figs = (pos) => (q.figures || []).filter((f) => f.position === pos).map((f) => `<div class="figure"><img src="${content.figureUrl(f.src)}" alt="${esc(f.alt)}" loading="lazy"></div>`).join('');
   root.innerHTML = `
     ${topbar(session.label, '#quiz')}
-    <div class="q-head"><span>${session.idx + 1} / ${session.qids.length}</span><span>${esc(content.subName(q.tags.sub))}${q.difficulty ? ' ・ 難易度 ' + '★'.repeat(q.difficulty) : ''}</span></div>
+    <div class="q-head"><span>${session.idx + 1} / ${session.qids.length}${q.source.original ? ' <span class="badge badge-orig">オリジナル</span>' : ''}</span><span>${esc(content.subName(q.tags.sub))}${q.difficulty ? ' ・ 難易度 ' + '★'.repeat(q.difficulty) : ''}</span></div>
     ${q.flags.outdated ? `<div class="outdated">注意: ${esc(q.flags.note || '制度変更により現在の扱いが異なる可能性があります')}</div>` : ''}
     ${q.kind === 'B' ? `<div class="case-wrap ${sessionStorage.getItem('sg-study.caseExpanded') ? 'expanded' : ''}" id="case"><div class="case">${q.caseHtml}${figs('case')}</div></div><button class="btn btn-small btn-ghost" id="case-toggle" type="button">${sessionStorage.getItem('sg-study.caseExpanded') ? '本文を折りたたむ' : '本文を全部表示'}</button><div class="q-label">設問</div>` : ''}
     <div class="q-stem">${q.stemHtml}${figs('stem')}</div>
@@ -172,7 +172,7 @@ async function answer(root, q, key) {
     ${textbookLinks(q.id)}
     <div class="citation">出典: ${esc(q.source.citation)}${q.source.modified ? `（原文の一部を変更: ${esc(q.source.modifiedNote)}）` : ''}</div>
     <div class="row" style="margin-top:10px"><button class="btn btn-small" id="bm" type="button">${state.bookmarked ? '★ ブックマーク済み' : '☆ ブックマーク'}</button>
-      <a class="btn btn-small btn-ghost" href="${esc(q.source.url)}" target="_blank" rel="noopener">原文 PDF</a></div>`;
+      ${q.source.url ? `<a class="btn btn-small btn-ghost" href="${esc(q.source.url)}" target="_blank" rel="noopener">原文 PDF</a>` : ''}</div>`;
   res.querySelector('#bm').onclick = async (e) => { const on = await store.toggleBookmark(q.id); e.target.textContent = on ? '★ ブックマーク済み' : '☆ ブックマーク'; toast(on ? 'ブックマークしました' : '解除しました'); };
   root.querySelector('#next-bar').classList.remove('hidden');
   res.scrollIntoView({ behavior: 'smooth', block: 'start' });

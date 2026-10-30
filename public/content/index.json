@@ -1,11 +1,12 @@
 {
   "contentVersion": 5,
-  "hash": "065cdf4fc4fec206",
-  "builtAt": "2026-10-30T03:47:01.534Z",
+  "hash": "4a8a0b491b92c387",
+  "builtAt": "2026-10-30T04:31:08.669Z",
   "counts": {
     "questionsA": 96,
     "questionsB": 26,
-    "reviewed": 122,
+    "original": 30,
+    "reviewed": 152,
     "topics": 36,
     "figures": 1
   },
@@ -15,8 +16,8 @@
       "bytes": 8355
     },
     "questions/index.json": {
-      "hash": "1f379629fd4e0d07",
-      "bytes": 22374
+      "hash": "abcb9e58082af5d9",
+      "bytes": 28300
     },
     "questions/2023r05.json": {
       "hash": "1e0d3c43eaddad7b",
@@ -34,6 +35,10 @@
       "hash": "54ad4d149b0311d0",
       "bytes": 57780
     },
+    "questions/original.json": {
+      "hash": "cd7c13ebee3e940a",
+      "bytes": 74644
+    },
     "questions/sample2022.json": {
       "hash": "ad76dd82c5facd4a",
       "bytes": 205952
@@ -43,12 +48,12 @@
       "bytes": 15124
     },
     "textbook/index.json": {
-      "hash": "ca8174bc72132e24",
-      "bytes": 35230
+      "hash": "140ce39e4a07b102",
+      "bytes": 35759
     },
     "textbook/A1-1-01.json": {
-      "hash": "13e8b594c7a6ff0e",
-      "bytes": 15518
+      "hash": "9228ac5c40b0f104",
+      "bytes": 15781
     },
     "textbook/A1-1-02.json": {
       "hash": "2f3568eb08857e0b",
@@ -71,8 +76,8 @@
       "bytes": 19647
     },
     "textbook/A1-1-07.json": {
-      "hash": "5db423f78af4a6d0",
-      "bytes": 17903
+      "hash": "08e90dc97b5a572a",
+      "bytes": 17928
     },
     "textbook/A1-2-01.json": {
       "hash": "11d1bb82df8c6827",
@@ -143,16 +148,16 @@
       "bytes": 27412
     },
     "textbook/A2-3-01.json": {
-      "hash": "bec8f7a382f3ba02",
-      "bytes": 19055
+      "hash": "bd2d263982f18d1d",
+      "bytes": 19737
     },
     "textbook/A2-4-01.json": {
-      "hash": "7c8ea77cbc62977d",
-      "bytes": 20172
+      "hash": "3dc6b247a0e77fae",
+      "bytes": 20429
     },
     "textbook/A2-5-01.json": {
-      "hash": "db817c5718d03d7e",
-      "bytes": 18581
+      "hash": "a3f5c7e927b82a5f",
+      "bytes": 18967
     },
     "textbook/A3-01.json": {
       "hash": "6173ccecf7a5cef6",
@@ -183,8 +188,8 @@
       "bytes": 20869
     },
     "textbook/A10-01.json": {
-      "hash": "08c73326f1abc8e3",
-      "bytes": 16950
+      "hash": "fe3d1c5e866a5dc5",
+      "bytes": 17088
     },
     "textbook/A11-01.json": {
       "hash": "ec10f19e5c08a2bd",

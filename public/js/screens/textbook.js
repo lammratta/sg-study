@@ -52,8 +52,11 @@ async function renderPage(root, id) {
   const related = (t.relatedQuestionIds || []).filter((q) => content.byId.has(q));
   const seen = related.filter((q) => store.states.get(q)?.attempts).length;
   const correct = related.filter((q) => store.states.get(q)?.lastCorrect).length;
-  const idsA = related.filter((q) => content.byId.get(q).kind === 'A');
-  const idsB = related.filter((q) => content.byId.get(q).kind === 'B');
+  const isOrig = (q) => !!content.byId.get(q).original;
+  const idsA = related.filter((q) => !isOrig(q) && content.byId.get(q).kind === 'A');
+  const idsB = related.filter((q) => !isOrig(q) && content.byId.get(q).kind === 'B');
+  const idsO = related.filter(isOrig);
+  const nOfficial = idsA.length + idsB.length;
   const runUrl = (ids, label) => `#quiz/run?mode=ids&ids=${ids.join(',')}&count=${ids.length}&label=${encodeURIComponent(label)}`;
   const subInfo = content.subs.get(t.sub);
   root.innerHTML = `
@@ -61,9 +64,11 @@ async function renderPage(root, id) {
     <div class="muted" style="margin:-6px 0 10px">${esc(subInfo?.middle || '')} › ${esc(subInfo?.name || '')} ・ 約 ${t.readingMinutes} 分${t.updatedAt ? ` ・ ${esc(t.updatedAt)} 更新` : ''}</div>
     <article class="topic">${t.html}</article>
     <div class="card"><div class="card-title">確認テスト</div>
-      ${related.length ? `<div class="muted" style="margin-bottom:8px">このページの内容で解ける公式問題 ${related.length} 問 ・ 出題済み ${seen} ・ 最新の回答で正解 ${correct}</div>
+      ${related.length ? `<div class="muted" style="margin-bottom:8px">このページの内容で解ける${nOfficial ? `公式問題 ${nOfficial} 問` : ''}${nOfficial && idsO.length ? ' ・ ' : ''}${idsO.length ? `オリジナル問題 ${idsO.length} 問` : ''} ・ 出題済み ${seen} ・ 最新の回答で正解 ${correct}</div>
       ${idsA.length ? `<a class="btn btn-primary" href="${runUrl(idsA, `確認テスト: ${t.title}`)}">確認テストを解く（科目A ${idsA.length} 問）</a>` : ''}
-      ${idsB.length ? `<a class="btn ${idsA.length ? '' : 'btn-primary'}" href="${runUrl(idsB, `ケース問題: ${t.title}`)}">ケース問題を解く（科目B ${idsB.length} 問）</a>` : ''}`
+      ${idsB.length ? `<a class="btn ${idsA.length ? '' : 'btn-primary'}" href="${runUrl(idsB, `ケース問題: ${t.title}`)}">ケース問題を解く（科目B ${idsB.length} 問）</a>` : ''}
+      ${idsO.length ? `<a class="btn ${nOfficial ? '' : 'btn-primary'}" href="${runUrl(idsO, `オリジナル問題: ${t.title}`)}">オリジナル問題で確認する（${idsO.length} 問）</a>
+      <div class="muted" style="margin-top:8px;font-size:.85rem">オリジナル問題は、教科書の内容から本アプリで作った問題です。IPA の試験問題ではありません。</div>` : ''}`
       : '<div class="muted">このページの内容だけで解ける公式問題は、収録している過去問・サンプル問題の中にありません。</div>'}</div>
     <div class="card"><div class="card-title">このページの理解度</div>
       <div class="rating">${RATING.map((r, k) => `<button type="button" class="btn ${st?.rating === k ? 'btn-primary' : ''}" data-r="${k}">${r}</button>`).join('')}</div></div>
